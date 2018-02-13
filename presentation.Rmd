@@ -1,0 +1,62 @@
+---
+title: 
+author: 
+date:
+output: 
+  revealjs::revealjs_presentation:
+    css: metropolis.css
+    self_contained: true
+    transition: none
+    background_transition: none
+    reveal_options:
+      slideNumber: true
+      previewLinks: true
+      minScale: 1.0
+      maxScale: 1.0
+      fig_caption: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, echo=FALSE}
+library(visNetwork)
+```
+
+## Konzeptpräsentation 
+
+<div id="left">
+  <font size="10">**Bronzezeit, Bestattungen & Cultural Evolution**</font>
+
+  Clemens Schmid \
+  *28. Februar 2018*
+</div>
+
+<div id="right">
+  <figure>
+    <img src="figures/bronce_age_burial_reconstruction.jpg" alt="The Pulpit Rock">
+    <figcaption>© Mike Codd, hampshirearchaeology.wordpress.com [13.2.18]</figcaption>
+  </figure>
+</div>
+
+## Fragestellung und Daten
+
+## 
+
+<section data-background-video="/home/clemens/neomod/neomod_datapool/bronze_age/output.mp4" 
+              data-background-color="#000">
+</section>
+
+## Theorie
+
+## Methode und Ergebnispotential
+
+```{r, out.width = '100%', fig.align='center'}
+nodes <- data.frame(id = 1:10)
+edges <- data.frame(from = c(1,2), to = c(1,3))
+visNetwork(nodes, edges) %>%
+  visLayout(randomSeed = 23)
+```
+
+## Gliederung der Arbeit
