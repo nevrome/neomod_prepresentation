@@ -52,11 +52,140 @@ library(visNetwork)
 
 ## Methode und Ergebnispotential
 
-```{r, out.width = '100%', fig.align='center'}
-nodes <- data.frame(id = 1:10)
-edges <- data.frame(from = c(1,2), to = c(1,3))
-visNetwork(nodes, edges) %>%
+## Populationsgraph
+
+```{r, out.width = '100%', fig.align='center', fig.height = 7}
+palette <- colorRampPalette(colors=c("#000000", "#FFFFFF"))
+
+nodes0 <- tibble::tibble(
+  id = 1:20, 
+  color = palette(length(id)),
+  label = id
+)
+edges0 <- tibble::tibble()
+
+visNetwork(nodes0, edges0) %>%
   visLayout(randomSeed = 23)
+```
+
+## Populationsgraph
+
+```{r, out.width = '100%', fig.align='center', fig.height = 7}
+palette <- colorRampPalette(colors=c("#000000", "#FFFFFF"))
+
+nodes0 <- tibble::tibble(
+  id = 1:20, 
+  color = palette(length(id)),
+  label = id,
+  level = c(1,1,1,1,2,2,2,3,3,3,1,1,3,3,3,4,4,4,4,4)
+)
+edges0 <- tibble::tibble()
+
+visNetwork(nodes0, edges0) %>%
+  visLayout(randomSeed = 23)
+```
+
+## Populationsgraph
+
+```{r, out.width = '100%', fig.align='center', fig.height = 7}
+edges1 <- tibble::tibble(
+  from = c(1, 3, 6, 11,  8),
+  to =   c(2, 4, 7, 12, 14),
+  label = "❤",
+  font.size = 30,
+  width = 8
+)
+
+visNetwork(nodes0, edges1) %>%
+  visLayout(randomSeed = 23)
+```
+
+## Populationsgraph
+
+```{r, out.width = '100%', fig.align='center', fig.height = 7}
+edges2 <- edges1 %>% rbind(
+  tibble::tibble(
+    from = c(1,2,1,2 , 3,4, 6,7,6,7, 6, 7, 11,12,11,12,11,12,  8,14, 8,14, 8,14,  8,  8,14),
+    to =   c(5,5,6,6 , 7,7, 8,8,9,9,10,10, 13,13,14,14,15,15, 16,16,17,17,18,18, 19, 20,20),
+    label = "*",
+    font.size = c(30),
+    width = 4
+  )
+)
+
+visNetwork(nodes0, edges2) %>%
+  visHierarchicalLayout() 
+```
+
+## Populationsgraph
+
+```{r}
+expand.grid.unique <- function(x, y, include.equals=FALSE) {
+  x <- unique(x)
+  y <- unique(y)
+  g <- function(i) {
+    z <- setdiff(y, x[seq_len(i-include.equals)])
+    if(length(z)) cbind(x[i], z, deparse.level=0)
+  }
+  do.call(rbind, lapply(seq_along(x), g)) %>%
+    as.data.frame() %>%
+    return()
+}
+```
+
+```{r, out.width = '100%', fig.align='center', fig.height = 7}
+all_relations <- expand.grid(nodes0$id, nodes0$id) %>%
+  dplyr::rename(
+    from = Var1,
+    to = Var2
+  ) %>% dplyr::filter(
+    from != to
+  )
+
+additional_relations <- all_relations %>% 
+  dplyr::anti_join(
+    edges2,
+    by = c("from", "to")
+  ) %>%
+  dplyr::anti_join(
+    edges2 %>% dplyr::rename(to = from, from = to),
+    by = c("from", "to")
+  ) %>%
+  dplyr::mutate(
+    label = NA,
+    font.size = 30,
+    width = 1
+  )
+
+edges3 <- edges2 %>% rbind(additional_relations)
+
+edges3 %>%
+ igraph::graph_from_data_frame(d = ., vertices = nodes0, directed = FALSE) %>%
+  visNetwork::visIgraph(layout = "layout_in_circle")
+```
+
+## Populationsgraph
+
+```{r out.width = '100%', fig.align='center', fig.height = 7}
+set.seed(123)
+additional_relations_small <- dplyr::sample_n(additional_relations, 30)
+
+edges4 <- edges2 %>% rbind(additional_relations_small)
+
+visNetwork(nodes0, edges4) %>%
+  visHierarchicalLayout() 
+```
+
+## Populationsgraph
+
+```{r out.width = '100%', fig.align='center', fig.height = 7}
+nodes1 <- nodes0
+nodes1$color[1:10] <- "orange"
+nodes1$color[15:20] <- "black"
+nodes1$color[11:15] <- "blue"
+
+visNetwork(nodes1, edges4) %>%
+  visHierarchicalLayout() 
 ```
 
 ## Gliederung der Arbeit
