@@ -40,7 +40,39 @@ library(visNetwork)
   </figure>
 </div>
 
-## Fragestellung und Daten
+## Bestattungsbräuche der europäischen Bronzezeit
+
+> - Gräber und Gräberfelder sind eine wesentliche Kategorie der Bronzezeitforschung
+
+\
+
+> - räumliche und zeitliche **Heterogenität der Rituale**
+>     - Grabanlage- und Vergesellschaftung (Nachnutzung neolithischer Megalithik, Gräberfelder) 
+>     - Grabbau (Särge, Totenhäuser, Bootsgräber)
+>     - Beigabenauswahl
+>     - Platzierung des Leichnams
+>     - ...
+
+\
+
+> - **Hauptspannungsfelder**
+>     - Körperbesttattung vs. Brandbestattung
+>     - Flachgrab vs. Hügelgrab
+    
+## Klassisches Narrativ der Entwicklung bronzezeitlicher Bestattungssitten
+
+**Frühe und Mittlere Bronzezeit**
+
+> - Körperbestattungen (in verschiedenen Variationen)
+> - Brandgräber dominieren zunächst nur in der Ungarischen Tiefebene
+> - Hügelgräber in Ost-, West- und Nordeuropa
+> - Flachgräber in Zentral- und Südeuropa, Überhügelung gewinnt an Bedeutung 
+
+\
+
+**Späte Bronzezeit**
+
+> - Brandbestattung setzt sich (fast) überall durch: *Urnenfelderzeit*
 
 ## 
 
