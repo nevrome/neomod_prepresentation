@@ -38,7 +38,7 @@ library(visNetwork)
 <div id="right">
   <figure>
     <img src="figures/bronce_age_burial_reconstruction.jpg" alt="The Pulpit Rock">
-    <figcaption>© Mike Codd, hampshirearchaeology.wordpress.com [13.2.18]</figcaption>
+    <figcaption>© Mike Codd, hampshirearchaeology.wordpress.com [13.02.18]</figcaption>
   </figure>
 </div>
 
@@ -49,8 +49,8 @@ library(visNetwork)
 \
 
 > - räumliche und zeitliche **Heterogenität der Rituale**
->     - Grabanlage- und Vergesellschaftung (Nachnutzung neolithischer Megalithik, Gräberfelder) 
->     - Grabbau (Särge, Totenhäuser, Bootsgräber)
+>     - Grabanlage- und Vergesellschaftung (Nachnutzung neolithischer Megalithik, Gräberfelder, etc.) 
+>     - Grabbau (Särge, Totenhäuser, Bootsgräber, etc.)
 >     - Beigabenauswahl
 >     - Platzierung des Leichnams
 >     - ...
@@ -76,10 +76,26 @@ library(visNetwork)
 
 > - Brandbestattung setzt sich (fast) überall durch: *Urnenfelderzeit*
 
+## Quantitative Erfassung der Phänomene: RADON-B
+
+<figure>
+  <img src="figures/radonb.jpg" alt="radon-b" align="middle">
+</figure>
+
+> - <sup>14</sup>C-Daten mit Kontextinformationen
+> - X Daten aus einem Zeitfenster 2500 -- 500 calBC
+> - Metainformationen
+>     - X Daten daraus mit einer Angabe zu Körpergrab/Brandgrab
+>     - X Daten daraus mit einer Angabe zu Flachgrab/Hügelgrab
+
+\
+
+> - Abbildung der Primärphänomene auf kontinentalem Maßstab
+
 ## 
 
 <section data-background-video="/home/clemens/neomod/neomod_datapool/bronze_age/output.mp4" 
-              data-background-color="#000">
+              data-background-color="#f1f1f1">
 </section>
 
 ## Theorie
