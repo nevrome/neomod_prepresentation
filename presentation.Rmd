@@ -138,11 +138,37 @@ library(visNetwork)
   </figure>
 </div>
 
-## Theorie
+## Theoretische Grundlage: Evolutionary Archaeology
 
-## Methode und Ergebnispotential
+**Cultural evolution theory**: 
+Die Prozesse der natürlichen Entwicklung von Spezies durch Evolution wirken auch bei der menschlichen Kulturentwicklung.
 
-## Populationsgraph
+\
+
+> - **Evolutionismus** (und Sozialdarwinismus) -- Kulturrelativismus -- **Neoevolutionismus** & Multilineare Evolution
+
+\
+
+> - Neue Perspektiven ab den 1970ern
+>     - **Evolutionary psychology**: Menschen verhalten sich wie prähistorische Jäger- und Sammler
+>     - **Human behavioural ecology**: Menschen optimieren ihr Verhalten auf Reproduktionserfolg
+>     - **Dual inheritance theory**: Kultur bildet ein zweites, viel dynamischeres Vererbungssystem, das genetisch determiniertes Verhalten hinter sich lässt.
+
+## Cultural Transmission and Evolution
+
+> - Bestattungsrituale sind **Verhalten/Ideen/Cultural Traits/Meme** und breiten sich in **Raum und Zeit** aus.
+> - Bestattungsrituale sind nur eingeschränkt natürlich determiniert und haben geringe Auswirkung auf die Subsistenz: Sie sind **nicht funktional**.
+> - Bestattungsrituale leben vor allem im **sozialen Raum** und ihre Ausbreitung ist von sozialen Beziehungen abhängig. 
+> - Bestattungsrituale können sowohl **vertikal** als auch **horizontal** tradiert werden. 
+
+\
+
+> - **Modellierung** 
+>     - Landschaft: Diachroner Populationsgraph
+>     - Entitäten: Ideen (**the meme's eye view**)
+>     - Verhalten: Reproduktion durch Expansion (und Kooperation)
+
+## Populationsgraph: Individuen
 
 ```{r, out.width = '100%', fig.height = 8}
 palette <- colorRampPalette(colors=c("#000000", "#FFFFFF"))
@@ -162,7 +188,7 @@ visNetwork(nodes0, edges0) %>%
   visLayout(randomSeed = 23)
 ```
 
-## Populationsgraph
+## Populationsgraph: Reproduktion
 
 ```{r, out.width = '100%', fig.height = 8}
 edges1 <- tibble::tibble(
@@ -177,7 +203,7 @@ visNetwork(nodes0, edges1) %>%
   visLayout(randomSeed = 23)
 ```
 
-## Populationsgraph
+## Populationsgraph: Vertikale, soziale Beziehungen
 
 ```{r, out.width = '100%', fig.height = 8}
 edges2 <- edges1 %>% rbind(
@@ -194,7 +220,7 @@ visNetwork(nodes0, edges2) %>%
   visHierarchicalLayout() 
 ```
 
-## Populationsgraph
+## Populationsgraph: Vererbung 
 
 ```{r, out.width = '100%', fig.height = 8}
 nodes1 <- nodes0
@@ -204,7 +230,7 @@ visNetwork(nodes1, edges2) %>%
   visHierarchicalLayout() 
 ```
 
-## Populationsgraph
+## Populationsgraph: Horizontale, soziale Beziehungen
 
 ```{r}
 expand.grid.unique <- function(x, y, include.equals=FALSE) {
@@ -251,7 +277,7 @@ edges3 %>%
   visNetwork::visIgraph(layout = "layout_in_circle", idToLabel = FALSE)
 ```
 
-## Populationsgraph
+## Populationsgraph: Horizontale, soziale Beziehungen
 
 ```{r out.width = '100%', fig.height = 8}
 # set.seed(123)
@@ -270,7 +296,7 @@ visNetwork(nodes0, edges4) %>%
   visHierarchicalLayout() 
 ```
 
-## Populationsgraph
+## Populationsgraph: Vererbung und Transmission
 
 ```{r out.width = '100%', fig.height = 8}
 nodes2 <- nodes0
@@ -279,5 +305,7 @@ nodes2$color.background[c(4, 11, 12, 13, 14, 7, 6, 8, 9, 10, 16, 17, 18, 19)] <-
 visNetwork(nodes2, edges4) %>%
   visHierarchicalLayout() 
 ```
+
+## Fragestellungen
 
 ## Gliederung der Arbeit
