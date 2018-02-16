@@ -87,6 +87,7 @@ library(visNetwork)
 > - Metainformationen
 >     - X Daten daraus mit einer Angabe zu Körpergrab/Brandgrab
 >     - X Daten daraus mit einer Angabe zu Flachgrab/Hügelgrab
+>     - X Daten mit Angaben zu beiden Kontexten
 
 \
 
@@ -97,6 +98,45 @@ library(visNetwork)
 <section data-background-video="/home/clemens/neomod/neomod_datapool/bronze_age/output.mp4" 
               data-background-color="#f1f1f1">
 </section>
+
+## Räumliche Gliederung und zeitliche Entwicklung
+
+<div id="left">
+  <figure>
+    <img src="/home/clemens/neomod/neomod_datapool/bronze_age/disp_map_full.jpeg">
+  </figure>
+</div>
+<div id="right">
+  <figure>
+    <img src="/home/clemens/neomod/neomod_datapool/bronze_age/disp_map.jpeg">
+  </figure>
+</div>
+
+## Räumliche Gliederung und zeitliche Entwicklung
+
+<div id="left">
+  <figure>
+    <img src="/home/clemens/neomod/neomod_datapool/bronze_age/amount_development_regions_cremation_inhumation.jpeg">
+  </figure>
+</div>
+<div id="right">
+  <figure>
+    <img src="/home/clemens/neomod/neomod_datapool/bronze_age/amount_development_regions_mound_flat.jpeg">
+  </figure>
+</div>
+
+## Räumliche Gliederung und zeitliche Entwicklung
+
+<div id="left">
+  <figure>
+    <img src="/home/clemens/neomod/neomod_datapool/bronze_age/proportions_development_regions_cremation_inhumation.jpeg">
+  </figure>
+</div>
+<div id="right">
+  <figure>
+    <img src="/home/clemens/neomod/neomod_datapool/bronze_age/proportions_development_regions_mound_flat.jpeg">
+  </figure>
+</div>
 
 ## Theorie
 
