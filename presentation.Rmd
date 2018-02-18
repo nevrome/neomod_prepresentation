@@ -97,13 +97,13 @@ library(visNetwork)
 <div class="fragment" data-fragment-index="1">
 <sup>14</sup>C-Daten mit Kontextinformationen
 
-- X Daten aus einem Zeitfenster 2500 -- 500 calBC
+- **3059** Daten an Gräbern aus einem Zeitfenster 2500 -- 500 calBC
 </div>
 <div class="fragment" data-fragment-index="2">
 - Metainformationen
-     - X Daten daraus mit einer Angabe zu Körpergrab/Brandgrab
-     - X Daten daraus mit einer Angabe zu Flachgrab/Hügelgrab
-     - X Daten mit Angaben zu beiden Kontexten
+     - **1792** Daten daraus mit einer Angabe zu Körpergrab/Brandgrab (1153/639)
+     - **1091** Daten daraus mit einer Angabe zu Flachgrab/Hügelgrab (585/506)
+     - **901** Daten mit Angaben zu beiden Kontexten
 </div>
 
 <div class="fragment" data-fragment-index="3">
