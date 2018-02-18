@@ -44,37 +44,49 @@ library(visNetwork)
 
 ## Bestattungsbräuche der europäischen Bronzezeit
 
-> - Gräber und Gräberfelder sind eine wesentliche Kategorie der Bronzezeitforschung
+<div class="fragment" data-fragment-index="1">
+- Gräber und Gräberfelder sind eine wesentliche Kategorie der Bronzezeitforschung
+</div>
 
 \
 
-> - räumliche und zeitliche **Heterogenität der Rituale**
->     - Grabanlage- und Vergesellschaftung (Nachnutzung neolithischer Megalithik, Gräberfelder, etc.) 
->     - Grabbau (Särge, Totenhäuser, Bootsgräber, etc.)
->     - Beigabenauswahl
->     - Platzierung des Leichnams
->     - ...
+<div class="fragment" data-fragment-index="2">
+- räumliche und zeitliche **Heterogenität der Rituale**
+     - Grabanlage- und Vergesellschaftung (Nachnutzung neolithischer Megalithik, Gräberfelder, etc.) 
+     - Grabbau (Särge, Totenhäuser, Bootsgräber, etc.)
+     - Beigabenauswahl 
+     - Platzierung des Leichnams
+     - ...
+</div>
 
 \
 
-> - **Hauptspannungsfelder**
->     - Körperbesttattung vs. Brandbestattung
->     - Flachgrab vs. Hügelgrab
+<div class="fragment" data-fragment-index="3">
+- **Hauptspannungsfelder**
+    - Körperbesttattung vs. Brandbestattung
+    - Flachgrab vs. Hügelgrab
+</div>
     
 ## Klassisches Narrativ der Entwicklung bronzezeitlicher Bestattungssitten
 
+<div class="fragment" data-fragment-index="1">
 **Frühe und Mittlere Bronzezeit**
 
-> - Körperbestattungen (in verschiedenen Variationen)
-> - Brandgräber dominieren zunächst nur in der Ungarischen Tiefebene
-> - Hügelgräber in Ost-, West- und Nordeuropa
-> - Flachgräber in Zentral- und Südeuropa, Überhügelung gewinnt an Bedeutung 
+- Körperbestattungen (in verschiedenen Variationen)
+- Brandgräber dominieren zunächst nur in der Ungarischen Tiefebene
+</div>
+<div class="fragment" data-fragment-index="2">
+- Hügelgräber in Ost-, West- und Nordeuropa
+- Flachgräber in Zentral- und Südeuropa, Überhügelung gewinnt an Bedeutung 
+</div>
 
 \
 
+<div class="fragment" data-fragment-index="3">
 **Späte Bronzezeit**
 
-> - Brandbestattung setzt sich (fast) überall durch: *Urnenfelderzeit*
+- Brandbestattung setzt sich (fast) überall durch: *Urnenfelderzeit*
+</div>
 
 ## Quantitative Erfassung der Phänomene: RADON-B
 
@@ -82,16 +94,21 @@ library(visNetwork)
   <img src="figures/radonb.jpg" alt="radon-b" align="middle">
 </figure>
 
-> - <sup>14</sup>C-Daten mit Kontextinformationen
-> - X Daten aus einem Zeitfenster 2500 -- 500 calBC
-> - Metainformationen
->     - X Daten daraus mit einer Angabe zu Körpergrab/Brandgrab
->     - X Daten daraus mit einer Angabe zu Flachgrab/Hügelgrab
->     - X Daten mit Angaben zu beiden Kontexten
+<div class="fragment" data-fragment-index="1">
+<sup>14</sup>C-Daten mit Kontextinformationen
 
-\
+- X Daten aus einem Zeitfenster 2500 -- 500 calBC
+</div>
+<div class="fragment" data-fragment-index="2">
+- Metainformationen
+     - X Daten daraus mit einer Angabe zu Körpergrab/Brandgrab
+     - X Daten daraus mit einer Angabe zu Flachgrab/Hügelgrab
+     - X Daten mit Angaben zu beiden Kontexten
+</div>
 
-> - Abbildung der Primärphänomene auf kontinentalem Maßstab
+<div class="fragment" data-fragment-index="3">
+- Abbildung der Primärphänomene auf kontinentalem Maßstab
+</div>
 
 ## 
 
