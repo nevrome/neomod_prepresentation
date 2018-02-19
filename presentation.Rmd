@@ -104,7 +104,7 @@ library(visNetwork)
 
 ## 
 
-<section data-background-video="/home/clemens/neomod/neomod_datapool/bronze_age/the_movie_3.mp4" 
+<section data-background-video="./the_movie_3.mp4" 
               data-background-color="#f1f1f1">
 </section>
 
