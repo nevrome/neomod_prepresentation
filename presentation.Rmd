@@ -98,16 +98,10 @@ library(visNetwork)
 <sup>14</sup>C-Daten mit Kontextinformationen
 
 - **3059** Daten an Gräbern aus einem Zeitfenster 2500 -- 500 calBC
-</div>
-<div class="fragment" data-fragment-index="2">
 - Metainformationen
-     - **1792** Daten daraus mit einer Angabe zu Körpergrab/Brandgrab (1153/639)
-     - **1091** Daten daraus mit einer Angabe zu Flachgrab/Hügelgrab (585/506)
-     - **901** Daten mit Angaben zu beiden Kontexten
-</div>
-
-<div class="fragment" data-fragment-index="3">
-- Abbildung der Primärphänomene auf kontinentalem Maßstab
+     - 1792 Daten daraus mit einer Angabe zu Körpergrab/Brandgrab (1153/639)
+     - 1091 Daten daraus mit einer Angabe zu Flachgrab/Hügelgrab (585/506)
+     - 901 Daten mit Angaben zu beiden Kontexten
 </div>
 
 ## 
@@ -193,7 +187,7 @@ Die Prozesse der natürlichen Entwicklung von Spezies durch Evolution wirken auc
 
 ## Populationsgraph: Individuen
 
-```{r, out.width = '100%', fig.height = 8}
+```{r, out.width = '100%', fig.height = 9}
 palette <- colorRampPalette(colors=c("#000000", "#FFFFFF"))
 
 nodes0 <- tibble::tibble(
@@ -226,7 +220,7 @@ visNetwork(nodes0, edges1) %>%
   visLayout(randomSeed = 23)
 ```
 
-## Populationsgraph: Vertikale, soziale Beziehungen
+## Populationsgraph: Vertikale Beziehungen
 
 ```{r, out.width = '100%', fig.height = 8}
 edges2 <- edges1 %>% rbind(
@@ -253,7 +247,7 @@ visNetwork(nodes1, edges2) %>%
   visHierarchicalLayout() 
 ```
 
-## Populationsgraph: Horizontale, soziale Beziehungen
+## Populationsgraph: Horizontale Beziehungen
 
 ```{r}
 expand.grid.unique <- function(x, y, include.equals=FALSE) {
@@ -300,7 +294,7 @@ edges3 %>%
   visNetwork::visIgraph(layout = "layout_in_circle", idToLabel = FALSE)
 ```
 
-## Populationsgraph: Horizontale, soziale Beziehungen
+## Populationsgraph: Horizontale Beziehungen
 
 ```{r out.width = '100%', fig.height = 8}
 # set.seed(123)
@@ -330,5 +324,7 @@ visNetwork(nodes2, edges4) %>%
 ```
 
 ## Fragestellungen
+
+- 
 
 ## Gliederung der Arbeit
