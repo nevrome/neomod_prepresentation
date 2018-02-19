@@ -156,28 +156,40 @@ Die Prozesse der natürlichen Entwicklung von Spezies durch Evolution wirken auc
 
 \
 
-> - **Evolutionismus** (und Sozialdarwinismus) -- Kulturrelativismus -- **Neoevolutionismus** & Multilineare Evolution
+<div class="fragment" data-fragment-index="1">
+- **Evolutionismus** (und Sozialdarwinismus) -- Kulturrelativismus -- **Neoevolutionismus** & Multilineare Evolution
+</div>
 
 \
 
-> - Neue Perspektiven ab den 1970ern
->     - **Evolutionary psychology**: Menschen verhalten sich wie prähistorische Jäger- und Sammler
->     - **Human behavioural ecology**: Menschen optimieren ihr Verhalten auf Reproduktionserfolg
->     - **Dual inheritance theory**: Kultur bildet ein zweites, viel dynamischeres Vererbungssystem, das genetisch determiniertes Verhalten hinter sich lässt.
+<div class="fragment" data-fragment-index="2">
+- Neue Perspektiven ab den 1970ern
+    - **Evolutionary psychology**: Menschen verhalten sich wie prähistorische Jäger- und Sammler
+    - **Human behavioural ecology**: Menschen optimieren ihr Verhalten auf Reproduktionserfolg
+    - **Dual inheritance theory**: Kultur bildet ein zweites, viel dynamischeres Vererbungssystem, das genetisch determiniertes Verhalten hinter sich lässt.
+</div>
 
 ## Cultural Transmission and Evolution
 
-> - Bestattungsrituale sind **Verhalten/Ideen/Cultural Traits/Meme** und breiten sich in **Raum und Zeit** aus.
-> - Bestattungsrituale sind nur eingeschränkt natürlich determiniert und haben geringe Auswirkung auf die Subsistenz: Sie sind **nicht funktional**.
-> - Bestattungsrituale leben vor allem im **sozialen Raum** und ihre Ausbreitung ist von sozialen Beziehungen abhängig. 
-> - Bestattungsrituale können sowohl **vertikal** als auch **horizontal** tradiert werden. 
+- Bestattungsrituale sind **Verhalten/Ideen/Cultural Traits/Meme** und breiten sich in **Raum und Zeit** aus.
+
+<div class="fragment" data-fragment-index="1">
+- Bestattungsrituale sind nur eingeschränkt natürlich determiniert und haben geringe Auswirkung auf die Subsistenz: Sie haben eine **relativ geringe Wechselwirkung** mit dem **Mensch-Umwelt-System**.
+</div>
+
+<div class="fragment" data-fragment-index="2">
+- Stattdessen leben Bestattungsrituale vor allem im **sozialen Raum** und ihre Ausbreitung ist von sozialen Beziehungen abhängig. 
+</div>
+
 
 \
 
-> - **Modellierung** 
->     - Landschaft: Diachroner Populationsgraph
->     - Entitäten: Ideen (**the meme's eye view**)
->     - Verhalten: Reproduktion durch Expansion (und Kooperation)
+<div class="fragment" data-fragment-index="3">
+- Abbildung in einem abstrakten Modell
+    - Landschaft: **Diachroner Populationsgraph** aus einem Populationsgenerator
+    - Entitäten: Ideen (**the meme's eye view**)
+    - Verhalten: **Reproduktion** durch Expansion (und Kooperation?)
+</div>
 
 ## Populationsgraph: Individuen
 
