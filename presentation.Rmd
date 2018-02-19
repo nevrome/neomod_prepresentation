@@ -44,14 +44,12 @@ library(visNetwork)
 
 ## Bestattungsbräuche der europäischen Bronzezeit
 
-<div class="fragment" data-fragment-index="1">
 - Gräber und Gräberfelder sind eine wesentliche Kategorie der Bronzezeitforschung
-</div>
 
 \
 
 <div class="fragment" data-fragment-index="2">
-- räumliche und zeitliche **Heterogenität der Rituale**
+- räumliche und zeitliche **Heterogenität der Phänomene**
      - Grabanlage- und Vergesellschaftung (Nachnutzung neolithischer Megalithik, Gräberfelder, etc.) 
      - Grabbau (Särge, Totenhäuser, Bootsgräber, etc.)
      - Beigabenauswahl 
@@ -77,7 +75,7 @@ library(visNetwork)
 </div>
 <div class="fragment" data-fragment-index="2">
 - Hügelgräber in Ost-, West- und Nordeuropa
-- Flachgräber in Zentral- und Südeuropa, Überhügelung gewinnt an Bedeutung 
+- Flachgräber in Zentral- und Südeuropa, Überhügelung gewinnt langsam an Bedeutung 
 </div>
 
 \
@@ -323,8 +321,15 @@ visNetwork(nodes2, edges4) %>%
   visHierarchicalLayout() 
 ```
 
-## Fragestellungen
+## Fragestellung
 
-- 
+- Mit welcher **Geschwindigkeit** breiten sich Ideen in einer Population unter verschiedenen Populationsparametern aus?
+- Über welche **Ausbreitungsmodi** und Kanäle verbreiten sich **Ideen, die weder funktional noch Mode sind**?
+- Welche Rolle spielen die klassischen Kategorien der **Diffusion of Innovation** Forschung (z.B. Tradition vs. Innovation, Early Adopters vs. Laggards) für sehr stabile Ideen über lange Zeiträume?
 
-## Gliederung der Arbeit
+\
+
+- Erklären **diachrone Veränderungen der Populationsparameter** Ablöseereignisse (z.B. Bottlenecks -> Drift)?
+- Ist die räumlich-zeitliche **Korrelation verschiedener Ideen** Ausdruck kausaler Relation oder Nebeneffekt von Transmissionsstrukturen?
+
+
