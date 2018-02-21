@@ -185,7 +185,7 @@ Die Prozesse der natürlichen Entwicklung von Spezies durch Evolution wirken auc
 
 ## Populationsgraph: Individuen
 
-```{r, out.width = '100%', fig.height = 9}
+```{r, out.width = '100%', fig.height = 7}
 palette <- colorRampPalette(colors=c("#000000", "#FFFFFF"))
 
 nodes0 <- tibble::tibble(
@@ -205,7 +205,7 @@ visNetwork(nodes0, edges0) %>%
 
 ## Populationsgraph: Reproduktion
 
-```{r, out.width = '100%', fig.height = 8}
+```{r, out.width = '100%', fig.height = 7}
 edges1 <- tibble::tibble(
   from = c(1, 3, 6, 11, 10),
   to =   c(2, 4, 7, 12, 13),
@@ -220,7 +220,7 @@ visNetwork(nodes0, edges1) %>%
 
 ## Populationsgraph: Vertikale Beziehungen
 
-```{r, out.width = '100%', fig.height = 8}
+```{r, out.width = '100%', fig.height = 7}
 edges2 <- edges1 %>% rbind(
   tibble::tibble(
     from = c(1,2,1,2 , 3,4, 6,7,6,7, 6, 7, 11,12,11,12,11,12, 10,13,10,13,10,13, 10, 10,13),
@@ -237,7 +237,7 @@ visNetwork(nodes0, edges2) %>%
 
 ## Populationsgraph: Vererbung 
 
-```{r, out.width = '100%', fig.height = 8}
+```{r, out.width = '100%', fig.height = 7}
 nodes1 <- nodes0
 nodes1$color.background[c(4, 7, 9, 10, 17, 19)] = "orange"
 
@@ -261,7 +261,7 @@ expand.grid.unique <- function(x, y, include.equals=FALSE) {
 }
 ```
 
-```{r, out.width = '100%', fig.height = 8}
+```{r, out.width = '100%', fig.height = 7}
 all_relations <- expand.grid(nodes0$id, nodes0$id) %>%
   dplyr::rename(
     from = Var1,
@@ -294,7 +294,7 @@ edges3 %>%
 
 ## Populationsgraph: Horizontale Beziehungen
 
-```{r out.width = '100%', fig.height = 8}
+```{r out.width = '100%', fig.height = 7}
 # set.seed(123)
 # additional_relations_small <- dplyr::sample_n(additional_relations, 30)
 additional_relations_small <- tibble::tibble(
@@ -313,7 +313,7 @@ visNetwork(nodes0, edges4) %>%
 
 ## Populationsgraph: Vererbung und Transmission
 
-```{r out.width = '100%', fig.height = 8}
+```{r out.width = '100%', fig.height = 7}
 nodes2 <- nodes0
 nodes2$color.background[c(4, 11, 12, 13, 14, 7, 6, 8, 9, 10, 16, 17, 18, 19)] <- "orange"
 
@@ -321,19 +321,15 @@ visNetwork(nodes2, edges4) %>%
   visHierarchicalLayout() 
 ```
 
-## Methode und Fragestellung
+## Methode und Fragen
 
 Implementierung eines **Computermodells** in R und C++ zur Simulation der **Transmission** einer **besonderen Ideenkategorie** in Abgleich zu **archäologischen Daten**.
 
-\
-
 <div class="fragment" data-fragment-index="2">
-- Mit welcher **Geschwindigkeit** breiten sich Ideen in einer Population unter verschiedenen Populationsparametern aus?
-- Über welche **Ausbreitungsmodi** und Kanäle verbreiten sich **Ideen, die weder funktional noch Mode sind**?
-- Welche Rolle spielen die klassischen Kategorien der **Diffusion of Innovation** Forschung (z.B. Tradition vs. Innovation, Early Adopters vs. Laggards) für sehr stabile Ideen über lange Zeiträume?
+- Mit welcher **Geschwindigkeit** breitet sich diese Ideenkategorie bei verschiedenen **Populationsparametern** aus?
+- Über welche **Ausbreitungsmodi** und Kanäle verbreitet sich diese Ideenkategorie primär?
+- Welche Rolle spielen die klassischen Axiome der **Diffusion of Innovation** Forschung (z.B. Tradition vs. Innovation, Early Adopters vs. Laggards) für sehr stabile Ideen über lange Zeiträume?
 </div>
-
-\
 
 <div class="fragment" data-fragment-index="3">
 - Erklären **diachrone Veränderungen der Populationsparameter** Ablöseereignisse (z.B. Bottlenecks)?
