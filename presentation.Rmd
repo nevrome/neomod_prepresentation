@@ -61,7 +61,7 @@ library(visNetwork)
 
 <div class="fragment" data-fragment-index="3">
 - **Hauptspannungsfelder**
-    - Körperbesttattung vs. Brandbestattung
+    - Körperbestattung vs. Brandbestattung
     - Flachgrab vs. Hügelgrab
 </div>
     
@@ -112,6 +112,7 @@ library(visNetwork)
 
 <figure>
   <img src="/home/clemens/neomod/neomod_datapool/bronze_age/disp_map_full.jpeg">
+  <figcaption>Abtrennung räumlicher Einheiten nach J. Kneisel und O. Nakoinz</figcaption>
 </figure>
 
 
