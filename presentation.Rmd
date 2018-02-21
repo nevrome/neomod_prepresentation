@@ -156,8 +156,8 @@ Die Prozesse der natürlichen Entwicklung von Spezies durch Evolution wirken auc
 
 <div class="fragment" data-fragment-index="2">
 - Neue Perspektiven ab den 1970ern
-    - **Evolutionary psychology**: Menschen verhalten sich wie prähistorische Jäger- und Sammler
-    - **Human behavioural ecology**: Menschen optimieren ihr Verhalten auf Reproduktionserfolg
+    - **Evolutionary psychology**
+    - **Human behavioural ecology**
     - **Dual inheritance theory**: Kultur bildet ein zweites, viel dynamischeres Vererbungssystem, das genetisch determiniertes Verhalten hinter sich lässt.
 </div>
 
@@ -321,15 +321,22 @@ visNetwork(nodes2, edges4) %>%
   visHierarchicalLayout() 
 ```
 
-## Fragestellung
+## Methode und Fragestellung
 
-- Mit welcher **Geschwindigkeit** breiten sich Ideen in einer Population unter verschiedenen Populationsparametern aus?
-- Über welche **Ausbreitungsmodi** und Kanäle verbreiten sich **Ideen, die weder funktional noch Mode sind**?
-- Welche Rolle spielen die klassischen Kategorien der **Diffusion of Innovation** Forschung (z.B. Tradition vs. Innovation, Early Adopters vs. Laggards) für sehr stabile Ideen über lange Zeiträume?
+Implementierung eines **Computermodells** in R und C++ zur Simulation der **Transmission** einer **besonderen Ideenkategorie** in Abgleich zu **archäologischen Daten**.
 
 \
 
-- Erklären **diachrone Veränderungen der Populationsparameter** Ablöseereignisse (z.B. Bottlenecks -> Drift)?
-- Ist die räumlich-zeitliche **Korrelation verschiedener Ideen** Ausdruck kausaler Relation oder Nebeneffekt von Transmissionsstrukturen?
+<div class="fragment" data-fragment-index="2">
+- Mit welcher **Geschwindigkeit** breiten sich Ideen in einer Population unter verschiedenen Populationsparametern aus?
+- Über welche **Ausbreitungsmodi** und Kanäle verbreiten sich **Ideen, die weder funktional noch Mode sind**?
+- Welche Rolle spielen die klassischen Kategorien der **Diffusion of Innovation** Forschung (z.B. Tradition vs. Innovation, Early Adopters vs. Laggards) für sehr stabile Ideen über lange Zeiträume?
+</div>
 
+\
+
+<div class="fragment" data-fragment-index="3">
+- Erklären **diachrone Veränderungen der Populationsparameter** Ablöseereignisse (z.B. Bottlenecks)?
+- Ist die räumlich-zeitliche **Korrelation verschiedener Ideen** Ausdruck kausaler Beziehungen oder Nebeneffekt von Transmissionsstrukturen?
+</div>
 
