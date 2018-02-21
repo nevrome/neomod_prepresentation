@@ -32,7 +32,7 @@ library(visNetwork)
   <font size="10">**Bronzezeit, Bestattungen & Cultural Evolution**</font>
 
   Clemens Schmid \
-  *28. Februar 2018*
+  *22. Februar 2018*
 </div>
 
 <div id="right">
