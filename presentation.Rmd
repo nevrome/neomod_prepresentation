@@ -167,7 +167,7 @@ Die Prozesse der natürlichen Entwicklung von Spezies durch Evolution wirken auc
 - Bestattungsrituale sind **Verhalten/Ideen/Cultural Traits/Meme** und breiten sich in **Raum und Zeit** aus.
 
 <div class="fragment" data-fragment-index="1">
-- Bestattungsrituale sind nur eingeschränkt natürlich determiniert und haben geringe Auswirkung auf die Subsistenz: Sie haben eine **relativ geringe Wechselwirkung** mit dem **Mensch-Umwelt-System**.
+- Bestattungsrituale sind eine **besondere Kategorie** von Ideen: Sie haben eine **relativ geringe Wechselwirkung** mit dem **Mensch-Umwelt-System**.
 </div>
 
 <div class="fragment" data-fragment-index="2">
