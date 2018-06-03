@@ -105,13 +105,29 @@ Clemens Schmid -- 05. Juni 2018
 
 Falkenstein
 
-## Neimann
+## Temporal Dynamics of Drift (and Innovation)
 
 ```{r}
 system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_1.R)), port = 3539)'; bash\\\"\" -T \"Run and ready\"")
 ```
 
-<iframe src="http://127.0.0.1:3539" style="width: 8000px; height: 900px"></iframe>
+<iframe src="http://127.0.0.1:3539" style="width: 8000px; height: 700px"></iframe>
+
+## Homogeneity Under Drift (and Innovation)
+
+```{r}
+system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_2.R)), port = 3540)'; bash\\\"\" -T \"Run and ready\"")
+```
+
+<iframe src="http://127.0.0.1:3540" style="width: 8000px; height: 700px"></iframe>
+
+## Dynamics of Stylistic Distance between Two Groups
+
+```{r}
+system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_3.R)), port = 3541)'; bash\\\"\" -T \"Run and ready\"")
+```
+
+<iframe src="http://127.0.0.1:3541" style="width: 8000px; height: 700px"></iframe>
 
 ## Populationsgraph: Individuen
 
