@@ -70,7 +70,7 @@ ui <- fluidPage(
                 min = 50, max = 200, value = 100, step = 50),
     sliderInput("mi_two_groups", label = "mi",
                 min = 0, max = 1, value = 0.1, step = 0.01),
-    actionButton("run_button_two_groups", "Run simulation")
+    actionButton("run_button_group_drift_simulation", "Run simulation")
   ),
   plotOutput("simplot")
 )
