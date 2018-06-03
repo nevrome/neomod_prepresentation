@@ -22,21 +22,16 @@ editor_options:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Konzeptpräsentation 
+## Presentation Bronze Age Round Table 
 
-<div id="left">
-  <font size="10">**Bronzezeit, Bestattungen & Cultural Evolution**</font>
+<font size="6">**A computational Cultural Transmission model of burial rites in Central, Northern and North-western Europe**</font>
 
-  Clemens Schmid \
-  *22. Februar 2018*
-</div>
+Clemens Schmid -- *05. Juni 2018*
 
-<div id="right">
-  <figure>
-    <img src="figures/bronce_age_burial_reconstruction.jpg" alt="The Pulpit Rock">
-    <figcaption>© Mike Codd, hampshirearchaeology.wordpress.com [13.02.18]</figcaption>
-  </figure>
-</div>
+<figure>
+  <img src="figures/devils_jump.jpg" alt="The Pulpit Rock">
+  <figcaption>© Michael Codd -- Devil's Jumps, Treyford, West Sussex, Barrow Cemetery -- West Sussex County Council, www.artuk.org [03.06.18]</figcaption>
+</figure>
 
 ## 
 
