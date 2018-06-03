@@ -38,7 +38,7 @@ Clemens Schmid -- *05. Juni 2018*
 ## test shiny app
 
 ```{r}
-system("R -e 'shiny_neiman_1.R'")
+system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_1.R)), port = 3539)'; bash\\\"\" -T \"Run and ready\"")
 ```
 
 <iframe src="http://127.0.0.1:3539" style="width: 8000px; height: 900px"></iframe>

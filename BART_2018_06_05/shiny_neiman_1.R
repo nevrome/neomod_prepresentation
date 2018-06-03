@@ -1,6 +1,6 @@
 library(shiny)
 
-hu <- shinyApp(
+shinyApp(
   
   ui = fluidPage(
     selectInput("region", "Region:", 
@@ -18,4 +18,4 @@ hu <- shinyApp(
   options = list(height = 500)
 )
 
-shiny::runApp(hu, port = 3539)
+# shiny::runApp(hu, port = 3539)
