@@ -5,7 +5,7 @@ date:
 output: 
   revealjs::revealjs_presentation:
     css: metropolis.css
-    self_contained: true
+    self_contained: false
     transition: none
     background_transition: none
     reveal_options:
@@ -38,24 +38,52 @@ Clemens Schmid -- *05. Juni 2018*
 ## test shiny app
 
 ```{r}
-system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_1.R)), port = 3539)'; bash\\\"\" -T \"Run and ready\"")
+#system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_1.R)), port = 3539)'; bash\\\"\" -T \"Run and ready\"")
 ```
 
 <iframe src="http://127.0.0.1:3539" style="width: 8000px; height: 900px"></iframe>
 
-## Räumliche Gliederung und zeitliche Entwicklung
+## RADON-B date distribution
 
 <figure>
   <img src="figures/general_map.jpeg">
-  <figcaption>Abtrennung räumlicher Einheiten nach J. Kneisel und O. Nakoinz</figcaption>
+  <figcaption>All ^14^C-dates from graves 2200-800calBC</figcaption>
 </figure>
 
-##
+## Research area 
+
+<figure>
+  <img src="figures/general_map_research_area_unzoomed.jpeg">
+  <figcaption>Artifical research area (rectangular form in Europe Albers Equal Area Conic EPSG: 102013) </figcaption>
+</figure>
+
+## Research area
+
+<figure>
+  <img src="figures/general_map_research_area.jpeg">
+  <figcaption>Artifical research area (rectangular form in Europe Albers Equal Area Conic EPSG: 102013) </figcaption>
+</figure>
+
+## 
 
 <section data-background-video="figures/the_movie_4.mp4" data-background-color="#f1f1f1">
 </section>
 
-## Räumliche Gliederung und zeitliche Entwicklung
+## Diachronic perspective
+
+<figure>
+  <img src="figures/general_map_research_area_timeslices.jpeg">
+  <figcaption>Timeslices of 200 years in between 2200-800calBC</figcaption>
+</figure>
+
+## Artificial comparison regions based on a regular grid 
+
+<figure>
+  <img src="figures/general_map_research_area_regions.jpeg">
+  <figcaption>Grid point distance: 400km, Circle radius: 240km, only regions with >=70 graves were kept</figcaption>
+</figure>
+
+## Spatio-temporal development (amount of graves)
 
 <div id="left">
   <figure>
@@ -65,6 +93,19 @@ system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(sub
 <div id="right">
   <figure>
     <img src="figures/development_amount_regions_burial_construction.jpeg">
+  </figure>
+</div>
+
+## Spatio-temporal development (proportion of ideas)
+
+<div id="left">
+  <figure>
+    <img src="figures/development_proportions_regions_burial_type.jpeg">
+  </figure>
+</div>
+<div id="right">
+  <figure>
+    <img src="figures/development_proportions_regions_burial_construction.jpeg">
   </figure>
 </div>
 
