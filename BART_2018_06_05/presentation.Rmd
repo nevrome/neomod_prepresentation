@@ -28,20 +28,12 @@ library(visNetwork)
 
 <font size="6">**A computational Cultural Transmission model of burial rites in Central, Northern and North-western Europe**</font>
 
-Clemens Schmid -- *05. Juni 2018*
+Clemens Schmid -- 05. Juni 2018
 
 <figure>
   <img src="figures/devils_jump.jpg" alt="The Pulpit Rock">
   <figcaption>© Michael Codd -- Devil's Jumps, Treyford, West Sussex, Barrow Cemetery -- West Sussex County Council, www.artuk.org [03.06.18]</figcaption>
 </figure>
-
-## test shiny app
-
-```{r}
-#system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_1.R)), port = 3539)'; bash\\\"\" -T \"Run and ready\"")
-```
-
-<iframe src="http://127.0.0.1:3539" style="width: 8000px; height: 900px"></iframe>
 
 ## RADON-B date distribution
 
@@ -108,6 +100,18 @@ Clemens Schmid -- *05. Juni 2018*
     <img src="figures/development_proportions_regions_burial_construction.jpeg">
   </figure>
 </div>
+
+## Closer look: Southwestern Germany
+
+Falkenstein
+
+## Neimann
+
+```{r}
+system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_1.R)), port = 3539)'; bash\\\"\" -T \"Run and ready\"")
+```
+
+<iframe src="http://127.0.0.1:3539" style="width: 8000px; height: 900px"></iframe>
 
 ## Populationsgraph: Individuen
 
