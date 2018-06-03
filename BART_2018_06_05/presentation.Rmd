@@ -14,6 +14,8 @@ output:
       minScale: 1.0
       maxScale: 1.0
       fig_caption: true
+      width: 1000
+      height: 600
 editor_options: 
   chunk_output_type: console
 ---
@@ -31,7 +33,7 @@ library(visNetwork)
 Clemens Schmid -- 05. Juni 2018
 
 <figure>
-  <img src="figures/devils_jump.jpg" alt="The Pulpit Rock">
+  <img src="figures/devils_jump.jpg">
   <figcaption>© Michael Codd -- Devil's Jumps, Treyford, West Sussex, Barrow Cemetery -- West Sussex County Council, www.artuk.org [03.06.18]</figcaption>
 </figure>
 
@@ -108,7 +110,7 @@ Falkenstein
 ## Temporal Dynamics of Drift (and Innovation)
 
 ```{r}
-system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_1.R)), port = 3539)'; bash\\\"\" -T \"Run and ready\"")
+#system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_1.R)), port = 3539)'; bash\\\"\" -T \"Run and ready\"")
 ```
 
 <iframe src="http://127.0.0.1:3539" style="width: 8000px; height: 700px"></iframe>
@@ -116,7 +118,7 @@ system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(sub
 ## Homogeneity Under Drift (and Innovation)
 
 ```{r}
-system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_2.R)), port = 3540)'; bash\\\"\" -T \"Run and ready\"")
+#system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_2.R)), port = 3540)'; bash\\\"\" -T \"Run and ready\"")
 ```
 
 <iframe src="http://127.0.0.1:3540" style="width: 8000px; height: 700px"></iframe>
@@ -124,7 +126,7 @@ system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(sub
 ## Dynamics of Stylistic Distance between Two Groups
 
 ```{r}
-system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_3.R)), port = 3541)'; bash\\\"\" -T \"Run and ready\"")
+#system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_3.R)), port = 3541)'; bash\\\"\" -T \"Run and ready\"")
 ```
 
 <iframe src="http://127.0.0.1:3541" style="width: 8000px; height: 700px"></iframe>

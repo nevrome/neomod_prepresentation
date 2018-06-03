@@ -285,6 +285,17 @@ h1.title {
 /*********************************************
  * IMAGES
  *********************************************/
+.reveal.reveal img {
+    border: none;
+    box-shadow: none;
+    max-height: calc(80vh);
+    max-width: calc(80vw);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
 .reveal section img {
     margin: 15px 0px;
     background: rgba(255, 255, 255, 0.12);
