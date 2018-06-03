@@ -1,0 +1,49 @@
+---
+title: 
+author: 
+date:
+output: 
+  revealjs::revealjs_presentation:
+    css: metropolis.css
+    self_contained: true
+    transition: none
+    background_transition: none
+    reveal_options:
+      slideNumber: true
+      previewLinks: true
+      minScale: 1.0
+      maxScale: 1.0
+      fig_caption: true
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Konzeptpräsentation 
+
+<div id="left">
+  <font size="10">**Bronzezeit, Bestattungen & Cultural Evolution**</font>
+
+  Clemens Schmid \
+  *22. Februar 2018*
+</div>
+
+<div id="right">
+  <figure>
+    <img src="figures/bronce_age_burial_reconstruction.jpg" alt="The Pulpit Rock">
+    <figcaption>© Mike Codd, hampshirearchaeology.wordpress.com [13.02.18]</figcaption>
+  </figure>
+</div>
+
+## 
+
+```{r}
+system("R -e 'shiny_neiman_1.R'")
+```
+
+<iframe src="http://127.0.0.1:3539" style="width: 8000px; height: 900px"></iframe>
+
+
