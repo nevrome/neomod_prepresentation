@@ -109,7 +109,7 @@ Clemens Schmid -- 05. Juni 2018
 <div class="fragment" data-fragment-index="3">
 **Late Bronze Age**
 
-- cremation burial is (almost) everywhere: Urnfield Period
+- cremation is (almost) everywhere: Urnfield Period
 </div>
 
 ## 
@@ -178,6 +178,7 @@ Clemens Schmid -- 05. Juni 2018
 <div id="left">
   <figure>
     <img src="figures/development_amount_regions_burial_type.jpeg">
+    <figcaption>Grave counted as present if year within ^14^C 2σ range</figcaption>
   </figure>
 </div>
 <div id="right">
@@ -191,6 +192,7 @@ Clemens Schmid -- 05. Juni 2018
 <div id="left">
   <figure>
     <img src="figures/development_proportions_regions_burial_type.jpeg">
+    <figcaption>The category "unknown" was ignored for the proportion calculation</figcaption>
   </figure>
 </div>
 <div id="right">
@@ -201,7 +203,7 @@ Clemens Schmid -- 05. Juni 2018
 
 ## Closer look: Southwestern Germany
 
-Falkenstein
+Falkenstein, F. (2017). Zum Wandel der Bestattungssitten von der Hügelgräber- zur Urnenfelderkultur in Süddeutschland. In D. Brandherm & B. Nessel (Eds.), Phasenübergänge und Umbrüche im bronzezeitlichen Europa (pp. 77–96). Bonn.
 
 ## 
 
@@ -216,34 +218,40 @@ Falkenstein
 ## Theoretical basis: Evolutionary Archaeology
 
 **Cultural evolution theory**: 
-Die Prozesse der natürlichen Entwicklung von Spezies durch Evolution wirken auch bei der menschlichen Kulturentwicklung.
+The processes of natural development of species through evolution also affect human cultural development.
 
 \
 
 <div class="fragment" data-fragment-index="1">
-- **Evolutionismus** (und Sozialdarwinismus) -- Kulturrelativismus -- **Neoevolutionismus** & Multilineare Evolution
+- **Evolutionism** (und Social Darwinism) -- Cultural Relativism -- **Neoevolutionism** & Multilineal evolution
 </div>
 
 \
 
 <div class="fragment" data-fragment-index="2">
-- Neue Perspektiven ab den 1970ern
+- New Perspectives from the 1970s:
     - **Evolutionary psychology**
     - **Human behavioural ecology**
-    - **Dual inheritance theory**: Kultur bildet ein zweites, viel dynamischeres Vererbungssystem, das genetisch determiniertes Verhalten hinter sich lässt.
+    - **Dual inheritance theory**: Culture forms a second, much more dynamic hereditary system that leaves genetically determined behaviour behind.
 </div>
 
 ## Cultural Transmission and Evolution
 
-- Bestattungsrituale sind **Verhalten/Ideen/Cultural Traits/Meme** und breiten sich in **Raum und Zeit** aus.
+- Funeral rituals are **behaviour/ideas/cultural traits/memes** and spread in space and time. They life in **social space** and their spread depends on social relationships.
 
 <div class="fragment" data-fragment-index="1">
-- Bestattungsrituale sind eine **besondere Kategorie** von Ideen: Sie haben eine **relativ geringe Wechselwirkung** mit dem **Mensch-Umwelt-System**.
+- Funeral rituals are a **special category** of ideas: They have a **relatively low interaction** with the **human-environment system**: they can be treated as **selectively neutral**.
 </div>
 
 <div class="fragment" data-fragment-index="2">
-- Stattdessen leben Bestattungsrituale vor allem im **sozialen Raum** und ihre Ausbreitung ist von sozialen Beziehungen abhängig. 
+Dunnell, R. C. (1978). Style and Function: A Fundamental Dichotomy. American Antiquity, 43(2), 192–202. https://doi.org/10.2307/279244
+
+_**Style** denotes those forms that do not have detectable selective values. **Function** is manifest as those forms that directly affect the Darwinian fitness of the populations in which they occur._
+
+_Traits that have discrete selective values over measurable amounts of time should be accountable by natural selection and a set of external conditions. **Traits identified as adaptively neutral will display a very different kind of behavior** because their frequencies in a population are not directly accountable in terms of selection and external contingencies. Their behavior should be more adequately accommodated by **stochastic processes**_
 </div>
+
+
 
 
 \
@@ -258,7 +266,7 @@ Die Prozesse der natürlichen Entwicklung von Spezies durch Evolution wirken auc
 ## Temporal Dynamics of Drift (and Innovation)
 
 ```{r}
-#system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_1.R)), port = 3539)'; bash\\\"\" -T \"Run and ready\"")
+system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_1.R)), port = 3539)'; bash\\\"\" -T \"Run and ready\"")
 ```
 
 <iframe src="http://127.0.0.1:3539" style="width: 8000px; height: 700px"></iframe>
