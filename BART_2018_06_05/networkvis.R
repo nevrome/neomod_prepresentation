@@ -24,7 +24,7 @@ nodes0 <- tibble::tibble(
   id = 1:20, 
   color.background = palette(length(id)),
   color.border = "black",
-  label = id,
+  # label = id,
   borderWidth = 3,
   shape = "circle",
   level = c(1,1,1,1,2,2,2,3,3,3,1,1,3,3,3,4,4,4,4,4)
@@ -70,8 +70,8 @@ visNetwork(nodes0, edges2) %>%
 # set.seed(123)
 # additional_relations_small <- dplyr::sample_n(additional_relations, 30)
 additional_relations_small <- tibble::tibble(
-  from = c(2,  3, 5, 8,  9, 13, 14, 16, 17, 18, 19),
-  to =   c(3, 11, 6, 9, 10, 14, 15, 17, 18, 19, 20),
+  from = c(2,  3, 5, 8,  9, 13, 14, 16, 17, 18, 19, 7, 17, 15, 6),
+  to =   c(3, 11, 6, 9, 10, 14, 15, 17, 18, 19, 20, 13, 9, 20, 3),
   label = NA,
   font.size = 30,
   width = 1
@@ -102,20 +102,18 @@ visNetwork(nodes2, edges4) %>% visHierarchicalLayout() %>%
 #3
 nodes2 <- nodes2[-c(1, 12), ]
 nodes2[nodes2$id %in% c(3, 8, 9, 10), ]$color.background <- "orange"
-nodes2[nodes2$id %in% c(13), ]$color.background <- "blue"
+nodes2[nodes2$id %in% c(13, 20), ]$color.background <- "blue"
 visNetwork(nodes2, edges4) %>% visHierarchicalLayout() %>% 
   visSaveFix(file = "BART_2018_06_05/network_figures/07.html", background = "#f1f1f1")
 
 #4
 nodes2 <- nodes2[!(nodes2$id %in% c(2, 6, 11, 15, 14)), ]
-nodes2[nodes2$id %in% c(16, 17, 18), ]$color.background <- "orange"
-nodes2[nodes2$id %in% c(20), ]$color.background <- "blue"
+nodes2[nodes2$id %in% c(16, 17, 18, 13), ]$color.background <- "orange"
 visNetwork(nodes2, edges4) %>% visHierarchicalLayout() %>% 
   visSaveFix(file = "BART_2018_06_05/network_figures/08.html", background = "#f1f1f1")
 
 #5
 nodes2 <- nodes2[!(nodes2$id %in% c(3, 8, 9, 10, 13)), ]
-nodes2[nodes2$id %in% c(19), ]$color.background <- "blue"
 visNetwork(nodes2, edges4) %>% visHierarchicalLayout() %>% 
   visSaveFix(file = "BART_2018_06_05/network_figures/09.html", background = "#f1f1f1")
 
@@ -123,12 +121,6 @@ visNetwork(nodes2, edges4) %>% visHierarchicalLayout() %>%
 nodes2 <- nodes2[!(nodes2$id %in% c(16, 17, 18, 20)), ]
 visNetwork(nodes2, edges4) %>% visHierarchicalLayout() %>% 
   visSaveFix(file = "BART_2018_06_05/network_figures/10.html", background = "#f1f1f1")
-
-#7 
-nodes2 <- nodes2[!(nodes2$id %in% c(19)), ]
-visNetwork(nodes2, edges4) %>% visHierarchicalLayout() %>% 
-  visSaveFix(file = "BART_2018_06_05/network_figures/11.html", background = "#f1f1f1")
-
 
 #### transform html to png ####
 
