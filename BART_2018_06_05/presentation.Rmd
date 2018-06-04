@@ -235,7 +235,7 @@ The processes of natural development of species through evolution also affect hu
     - **Dual inheritance theory**: Culture forms a second, much more dynamic hereditary system that leaves genetically determined behaviour behind.
 </div>
 
-## Cultural Transmission and Evolution
+## Burial rites as Neutral Variants
 
 - Funeral rituals are **behaviour/ideas/cultural traits/memes** and spread in space and time. They life in **social space** and their spread depends on social relationships.
 
@@ -247,14 +247,34 @@ The processes of natural development of species through evolution also affect hu
 Dunnell, R. C. (1978). Style and Function: A Fundamental Dichotomy. American Antiquity, 43(2), 192–202. https://doi.org/10.2307/279244
 
 _**Style** denotes those forms that do not have detectable selective values. **Function** is manifest as those forms that directly affect the Darwinian fitness of the populations in which they occur._
+</div>
 
+<div class="fragment" data-fragment-index="3">
 _Traits that have discrete selective values over measurable amounts of time should be accountable by natural selection and a set of external conditions. **Traits identified as adaptively neutral will display a very different kind of behavior** because their frequencies in a population are not directly accountable in terms of selection and external contingencies. Their behavior should be more adequately accommodated by **stochastic processes**_
 </div>
 
+## Simulating Transmission of Neutral Variants
+
+- The main mechanisms of diffusion of neutral variants are **drift** and **flow**.
+
+<div class="fragment" data-fragment-index="1">
+A **simple simulation** to illustrate these processes:
+
+Neiman, F. D. (1995). Stylistic Variation in Evolutionary Perspective: Inferences from Decorative Diversity and Interassemblage Distance in Illinois Woodland Ceramic Assemblages. American Antiquity, 60(1), 7–36. https://doi.org/10.2307/282074
+
+https://nevrome.shinyapps.io/neiman1995/
+</div>
+
+<div class="fragment" data-fragment-index="2">
+**Ingredients:**
+
+- A population of individuals with size $N$
+- $k$ different neutral variants in this population
+- In each time step every individual randomly adopts a variant from somebody else.
+</div>
 
 
-
-\
+## 
 
 <div class="fragment" data-fragment-index="3">
 - Abbildung in einem abstrakten Modell
@@ -269,7 +289,12 @@ _Traits that have discrete selective values over measurable amounts of time shou
 system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_1.R)), port = 3539)'; bash\\\"\" -T \"Run and ready\"")
 ```
 
-<iframe src="http://127.0.0.1:3539" style="width: 8000px; height: 700px"></iframe>
+<iframe src="http://127.0.0.1:3539" style="width: 8000px; height: 600px"></iframe>
+
+- $k$: Amount of variants in a population
+- $N_e$: Size of the effective population.
+- $t$: Time / number of iterations
+- ($μ$: Innovation rate. Probability of the creation of a new variant)
 
 ## Homogeneity Under Drift (and Innovation)
 
@@ -277,7 +302,7 @@ system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(sub
 #system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_2.R)), port = 3540)'; bash\\\"\" -T \"Run and ready\"")
 ```
 
-<iframe src="http://127.0.0.1:3540" style="width: 8000px; height: 700px"></iframe>
+<iframe src="http://127.0.0.1:3540" style="width: 8000px; height: 600px"></iframe>
 
 ## Dynamics of Stylistic Distance between Two Groups
 
@@ -285,7 +310,7 @@ system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(sub
 #system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_3.R)), port = 3541)'; bash\\\"\" -T \"Run and ready\"")
 ```
 
-<iframe src="http://127.0.0.1:3541" style="width: 8000px; height: 700px"></iframe>
+<iframe src="http://127.0.0.1:3541" style="width: 8000px; height: 600px"></iframe>
 
 ## 
 
