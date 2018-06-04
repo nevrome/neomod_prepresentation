@@ -142,6 +142,34 @@ Falkenstein
 
 <iframe src="http://127.0.0.1:3541" style="width: 8000px; height: 700px"></iframe>
 
+## Population graph
+
+<figure>
+  <img src="network_figures/01.png">
+  <figcaption>Population graph, no connecttion</figcaption>
+</figure>
+
+## Population graph
+
+<figure>
+  <img src="network_figures/02.png">
+  <figcaption>Population graph, couples (special horizontal relationship)</figcaption>
+</figure>
+
+## Population graph
+
+<figure>
+  <img src="network_figures/03.png">
+  <figcaption>Population graph, vertical relations</figcaption>
+</figure>
+
+## Population graph
+
+<figure>
+  <img src="network_figures/04.png">
+  <figcaption>Population graph, horizontal and oblique relations</figcaption>
+</figure>
+
 ## Model settings
 
 ```{r eval = FALSE, echo = TRUE}
@@ -277,3 +305,44 @@ void Idea::expand() {
 }
 ```
 
+## Population graph
+
+<figure>
+  <img src="network_figures/05.png">
+  <figcaption>Idea expansion 1</figcaption>
+</figure>
+
+## Population graph
+
+<figure>
+  <img src="network_figures/06.png">
+  <figcaption>Idea expansion 2</figcaption>
+</figure>
+
+## Population graph
+
+<figure>
+  <img src="network_figures/07.png">
+  <figcaption>Idea expansion 3</figcaption>
+</figure>
+
+## Population graph
+
+<figure>
+  <img src="network_figures/08.png">
+  <figcaption>Idea expansion 4</figcaption>
+</figure>
+
+## Population graph
+
+<figure>
+  <img src="network_figures/09.png">
+  <figcaption>Idea expansion 5</figcaption>
+</figure>
+
+## Population graph
+
+<figure>
+  <img src="network_figures/10.png">
+  <figcaption>Idea expansion 6</figcaption>
+</figure>
