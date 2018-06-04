@@ -205,6 +205,18 @@ Clemens Schmid -- 05. Juni 2018
 
 Falkenstein, F. (2017). Zum Wandel der Bestattungssitten von der Hügelgräber- zur Urnenfelderkultur in Süddeutschland. In D. Brandherm & B. Nessel (Eds.), Phasenübergänge und Umbrüche im bronzezeitlichen Europa (pp. 77–96). Bonn.
 
+<figure>
+  <img src="figures/falkenstein_burial_type.png">
+</figure>
+
+## Closer look: Southwestern Germany
+
+Falkenstein, F. (2017). Zum Wandel der Bestattungssitten von der Hügelgräber- zur Urnenfelderkultur in Süddeutschland. In D. Brandherm & B. Nessel (Eds.), Phasenübergänge und Umbrüche im bronzezeitlichen Europa (pp. 77–96). Bonn.
+
+<figure>
+  <img src="figures/falkenstein_burial_construction.png">
+</figure>
+
 ## 
 
 \
