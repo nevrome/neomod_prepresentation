@@ -273,16 +273,6 @@ https://nevrome.shinyapps.io/neiman1995/
 - In each time step every individual randomly adopts a variant from somebody else.
 </div>
 
-
-## 
-
-<div class="fragment" data-fragment-index="3">
-- Abbildung in einem abstrakten Modell
-    - Landschaft: **Diachroner Populationsgraph** aus einem Populationsgenerator
-    - Entitäten: Ideen (**the meme's eye view**)
-    - Verhalten: **Reproduktion** durch Expansion (und Kooperation?)
-</div>
-
 ## Temporal dynamics of drift
 
 ```{r}
@@ -320,35 +310,47 @@ system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(sub
 
 <hr>
 
-## Population graph
+## Idea
+
+If there's a relation of population size, intergroup interaction and intergroup homogeneity, is it possible to get better insights into population level parameters with a transmission model that describes population in more sophisticated terms? 
+
+**Ingredients:**
+
+- Diachronic **population graph**
+    - Individuals
+    - Relations
+- Entities: **ideas** (*the meme's eye view*)
+- Behaviour: **Reproduction** through expansion 
+
+## Population graph -- Concept
 
 <figure>
   <img src="network_figures/01.png">
-  <figcaption>Population graph, no connecttion</figcaption>
+  <figcaption>Population graph, no connection</figcaption>
 </figure>
 
-## Population graph
+## Population graph -- Concept
 
 <figure>
   <img src="network_figures/02.png">
   <figcaption>Population graph, couples (special horizontal relationship)</figcaption>
 </figure>
 
-## Population graph
+## Population graph -- Concept
 
 <figure>
   <img src="network_figures/03.png">
   <figcaption>Population graph, vertical relations</figcaption>
 </figure>
 
-## Population graph
+## Population graph -- Concept
 
 <figure>
   <img src="network_figures/04.png">
   <figcaption>Population graph, horizontal and oblique relations</figcaption>
 </figure>
 
-## Model settings
+## Population graph -- Actual implementation
 
 ```{r eval = FALSE, echo = TRUE}
 
@@ -426,7 +428,7 @@ models_grid <- expand.grid(
 
 ```
 
-## Population graphs
+## Population graph  -- Actual implementation
 
 <figure>
   <img src="figures/population_graph_connection_0.jpeg">
@@ -434,7 +436,7 @@ models_grid <- expand.grid(
 </figure>
 
 
-## Population graphs
+## Population graph -- Actual implementation
 
 <figure>
   <img src="figures/population_graph_connection_001.jpeg">
@@ -442,14 +444,56 @@ models_grid <- expand.grid(
 </figure>
 
 
-## Population graphs
+## Population graph -- Actual implementation
 
 <figure>
   <img src="figures/population_graph_connection_01.jpeg">
   <figcaption>Constant population size of 40, 1400 years, Cross unit horizontal contact proportion: 0.1</figcaption>
 </figure>
 
-## Expansion
+## Idea behaviour -- Concept
+
+<figure>
+  <img src="network_figures/05.png">
+  <figcaption>Idea expansion 1</figcaption>
+</figure>
+
+## Idea behaviour -- Concept
+
+<figure>
+  <img src="network_figures/06.png">
+  <figcaption>Idea expansion 2</figcaption>
+</figure>
+
+## Idea behaviour -- Concept
+
+<figure>
+  <img src="network_figures/07.png">
+  <figcaption>Idea expansion 3</figcaption>
+</figure>
+
+## Idea behaviour -- Concept
+
+<figure>
+  <img src="network_figures/08.png">
+  <figcaption>Idea expansion 4</figcaption>
+</figure>
+
+## Idea behaviour -- Concept
+
+<figure>
+  <img src="network_figures/09.png">
+  <figcaption>Idea expansion 5</figcaption>
+</figure>
+
+## Idea behaviour -- Concept
+
+<figure>
+  <img src="network_figures/10.png">
+  <figcaption>Idea expansion 6</figcaption>
+</figure>
+
+## Idea behaviour -- Actual implementation
 
 ```{cpp eval = FALSE, echo = TRUE}
 void Idea::expand() {
@@ -482,48 +526,6 @@ void Idea::expand() {
   
 }
 ```
-
-## Population graph
-
-<figure>
-  <img src="network_figures/05.png">
-  <figcaption>Idea expansion 1</figcaption>
-</figure>
-
-## Population graph
-
-<figure>
-  <img src="network_figures/06.png">
-  <figcaption>Idea expansion 2</figcaption>
-</figure>
-
-## Population graph
-
-<figure>
-  <img src="network_figures/07.png">
-  <figcaption>Idea expansion 3</figcaption>
-</figure>
-
-## Population graph
-
-<figure>
-  <img src="network_figures/08.png">
-  <figcaption>Idea expansion 4</figcaption>
-</figure>
-
-## Population graph
-
-<figure>
-  <img src="network_figures/09.png">
-  <figcaption>Idea expansion 5</figcaption>
-</figure>
-
-## Population graph
-
-<figure>
-  <img src="network_figures/10.png">
-  <figcaption>Idea expansion 6</figcaption>
-</figure>
 
 ## Spatio-temporal development (simulation)
 
