@@ -8,7 +8,7 @@ nodes0 <- tibble::tibble(
   id = 1:20, 
   color.background = palette(length(id)),
   color.border = "black",
-  #label = id,
+  label = id,
   borderWidth = 3,
   shape = "circle",
   level = c(1,1,1,1,2,2,2,3,3,3,1,1,3,3,3,4,4,4,4,4)
@@ -46,57 +46,6 @@ edges2 <- edges1 %>% rbind(
 visNetwork(nodes0, edges2) %>%
   visHierarchicalLayout() 
 
-## Populationsgraph: Vererbung 
-
-nodes1 <- nodes0
-nodes1$color.background[c(4, 7, 9, 10, 17, 19)] = "orange"
-
-visNetwork(nodes1, edges2) %>%
-  visHierarchicalLayout() 
-
-## Populationsgraph: Horizontale Beziehungen
-
-expand.grid.unique <- function(x, y, include.equals=FALSE) {
-  x <- unique(x)
-  y <- unique(y)
-  g <- function(i) {
-    z <- setdiff(y, x[seq_len(i-include.equals)])
-    if(length(z)) cbind(x[i], z, deparse.level=0)
-  }
-  do.call(rbind, lapply(seq_along(x), g)) %>%
-    as.data.frame() %>%
-    return()
-}
-
-all_relations <- expand.grid(nodes0$id, nodes0$id) %>%
-  dplyr::rename(
-    from = Var1,
-    to = Var2
-  ) %>% dplyr::filter(
-    from != to
-  )
-
-additional_relations <- all_relations %>% 
-  dplyr::anti_join(
-    edges2,
-    by = c("from", "to")
-  ) %>%
-  dplyr::anti_join(
-    edges2 %>% dplyr::rename(to = from, from = to),
-    by = c("from", "to")
-  ) %>%
-  dplyr::mutate(
-    label = NA,
-    font.size = 30,
-    width = 1
-  )
-
-edges3 <- edges2 %>% rbind(additional_relations)
-
-edges3 %>%
-  igraph::graph_from_data_frame(d = ., vertices = nodes0, directed = FALSE) %>%
-  visNetwork::visIgraph(layout = "layout_in_circle", idToLabel = FALSE)
-
 ## Populationsgraph: Horizontale Beziehungen
 
 # set.seed(123)
@@ -112,12 +61,30 @@ additional_relations_small <- tibble::tibble(
 edges4 <- edges2 %>% rbind(additional_relations_small)
 
 visNetwork(nodes0, edges4) %>%
-  visHierarchicalLayout() 
+  visHierarchicalLayout()
 
 ## Populationsgraph: Vererbung und Transmission
 
 nodes2 <- nodes0
-nodes2$color.background[c(4, 11, 12, 13, 14, 7, 6, 8, 9, 10, 16, 17, 18, 19)] <- "orange"
 
-visNetwork(nodes2, edges4) %>%
-  visHierarchicalLayout() 
+#1
+nodes2$color.background[c(1)] <- "orange"
+nodes2$color.background[c(12)] <- "blue"
+visNetwork(nodes2, edges4) %>% visHierarchicalLayout() 
+
+#2 
+nodes2$color.background[c(2, 6)] <- "orange"
+nodes2$color.background[c(11, 15, 14)] <- "blue"
+visNetwork(nodes2, edges4) %>% visHierarchicalLayout() 
+
+#3
+nodes2 <- nodes2[-c(1, 12), ]
+nodes2[nodes2$id %in% c(3, 8, 9, 10), ]$color.background <- "orange"
+nodes2[nodes2$id %in% c(13), ]$color.background <- "blue"
+visNetwork(nodes2, edges4) %>% visHierarchicalLayout() 
+
+#4
+nodes2[nodes2$id %in% c(2, 6, 11, 15, 14), ] <- NULL
+nodes2[nodes2$id %in% c(3, 8, 9, 10), ]$color.background <- "orange"
+nodes2[nodes2$id %in% c(13), ]$color.background <- "blue"
+visNetwork(nodes2, edges4) %>% visHierarchicalLayout() 
