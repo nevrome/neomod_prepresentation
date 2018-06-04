@@ -286,23 +286,29 @@ https://nevrome.shinyapps.io/neiman1995/
 ## Temporal Dynamics of Drift (and Innovation)
 
 ```{r}
-#system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_1.R)), port = 3539)'; bash\\\"\" -T \"Run and ready\"")
+#system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_1.R)), port = 3539)'; bash\\\"\" -T \"Run and ready\"", wait = F)
 ```
 
 <iframe src="http://127.0.0.1:3539" style="width: 8000px; height: 650px"></iframe>
 
 - $k$: Amount of variants in a population
-- $N_e$: Size of the effective population.
+- $N_e$: Size of the effective population
 - $t$: Time / number of iterations
 - ($μ$: Innovation rate. Probability of the creation of a new variant)
 
 ## Dynamics of Stylistic Distance between Two Groups
 
 ```{r}
-#system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_3.R)), port = 3541)'; bash\\\"\" -T \"Run and ready\"")
+#system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_3.R)), port = 3541)'; bash\\\"\" -T \"Run and ready\"", wait = F)
 ```
 
 <iframe src="http://127.0.0.1:3541" style="width: 8000px; height: 650px"></iframe>
+
+- $k$: Amount of variants in a population
+- $N_e$: Size of the effective population
+- $t$: Time / number of iterations
+- $m_i$: Intergroup transmission rate
+- $d_{ij}^2$: Squared Euclidean distance
 
 ## 
 
