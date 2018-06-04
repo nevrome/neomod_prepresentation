@@ -222,6 +222,29 @@ models_grid <- expand.grid(
 
 ```
 
+## Population graphs
+
+<figure>
+  <img src="figures/population_graph_connection_0.jpeg">
+  <figcaption>Constant population size of 40, 1400 years, Cross unit horizontal contact proportion: 0</figcaption>
+</figure>
+
+
+## Population graphs
+
+<figure>
+  <img src="figures/population_graph_connection_001.jpeg">
+  <figcaption>Constant population size of 40, 1400 years, Cross unit horizontal contact proportion: 0.01</figcaption>
+</figure>
+
+
+## Population graphs
+
+<figure>
+  <img src="figures/population_graph_connection_01.jpeg">
+  <figcaption>Constant population size of 40, 1400 years, Cross unit horizontal contact proportion: 0.1</figcaption>
+</figure>
+
 ## Expansion
 
 ```{cpp eval = FALSE, echo = TRUE}
