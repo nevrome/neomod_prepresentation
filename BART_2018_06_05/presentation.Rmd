@@ -55,64 +55,64 @@ Clemens Schmid -- 05. Juni 2018
 
 ⚠ work in progress ⚠
 
-## Bestattungsbräuche der europäischen Bronzezeit
+## Burial customs of the European Bronze Age
 
-- Gräber und Gräberfelder sind eine wesentliche Kategorie der Bronzezeitforschung
+- Graves and cemeteries are an essential category of Bronze Age research
 
 \
 
 <div class="fragment" data-fragment-index="2">
-- räumliche und zeitliche **Heterogenität der Phänomene**
-     - Grabanlage- und Vergesellschaftung (Nachnutzung neolithischer Megalithik, Gräberfelder, etc.) 
-     - Grabbau (Särge, Totenhäuser, Bootsgräber, etc.)
-     - Beigabenauswahl 
-     - Platzierung des Leichnams
+- spatial and temporal **heterogeneity of phenomena**
+     - Grave position and association (subsequent use of Neolithic megalithics, cemeteries, etc.) 
+     - Grave construction (coffins, houses of the dead, boat graves, etc.)
+     - Selection of burial objects 
+     - Placement of the corpse
      - ...
 </div>
 
 \
 
 <div class="fragment" data-fragment-index="3">
-- **Hauptspannungsfelder**
-    - Körperbestattung vs. Brandbestattung
-    - Flachgrab vs. Hügelgrab
+- **Main dimensions**
+    - Inhumation vs. Cremation
+    - Flat grave vs. Burial mound
 </div>
     
-## Klassisches Narrativ der Entwicklung bronzezeitlicher Bestattungssitten
+## Classical narrative of the development of Bronze Age burial customs
 
 <div class="fragment" data-fragment-index="1">
-**Frühe und Mittlere Bronzezeit**
+**Early and Middle Bronze Age**
 
-- Körperbestattungen (in verschiedenen Variationen)
-- Brandgräber dominieren zunächst nur in der Ungarischen Tiefebene
+- Inhumations (in different variations)
+- Cremation graves initially dominate only in the Hungarian Plain
 </div>
 <div class="fragment" data-fragment-index="2">
-- Hügelgräber in Ost-, West- und Nordeuropa
-- Flachgräber in Zentral- und Südeuropa, Überhügelung gewinnt langsam an Bedeutung 
+- Burial mounds in Eastern, Western and Northern Europe
+- Flat graves in Central and Southern Europe, mounds are slowly gaining importance 
 </div>
 
 \
 
 <div class="fragment" data-fragment-index="3">
-**Späte Bronzezeit**
+**Late Bronze Age**
 
-- Brandbestattung setzt sich (fast) überall durch: *Urnenfelderzeit*
+- cremation burial is (almost) everywhere: Urnfield Period
 </div>
 
-## Quantitative Erfassung der Phänomene: RADON-B
+## Quantitative recording of phenomena: RADON-B
 
 <figure>
   <img src="figures/radonb.jpg" alt="radon-b" align="middle">
 </figure>
 
 <div class="fragment" data-fragment-index="1">
-<sup>14</sup>C-Daten mit Kontextinformationen
+<sup>14</sup>C dates with context information
 
-- **3059** Daten an Gräbern aus einem Zeitfenster 2500 -- 500 calBC
-- Metainformationen
-     - 1792 Daten daraus mit einer Angabe zur Dimension **Körpergrab/Brandgrab (1153/639)**
-     - 1091 Daten daraus mit einer Angabe zur Dimension **Flachgrab/Hügelgrab (585/506)**
-     - **901** Daten mit Angaben zu beiden Kontexten
+- **2336** Dates from graves between 2200 and 800 calBC
+- Metainformation
+     - 1465 dates from this with an entry for the dimension **Inhumation/Cremation (935/530)**
+     - 915 dates from this with an entry for the dimension **Flat grave/Burial mound (459/456)**
+     - **753** dates with specifications for both contexts
 </div>
 
 ## RADON-B date distribution
