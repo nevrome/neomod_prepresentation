@@ -16,6 +16,7 @@ output:
       fig_caption: true
       width: 1000
       height: 600
+      center: true
 editor_options: 
   chunk_output_type: console
 ---
@@ -54,6 +55,8 @@ Clemens Schmid -- 05. Juni 2018
   - First simultation runs
 
 ⚠ work in progress ⚠
+
+# Context ⇓
 
 ## Burial customs of the European Bronze Age
 
@@ -98,6 +101,8 @@ Clemens Schmid -- 05. Juni 2018
 
 - cremation burial is (almost) everywhere: Urnfield Period
 </div>
+
+# Data ⇓
 
 ## Quantitative recording of phenomena: RADON-B
 
@@ -178,7 +183,9 @@ Clemens Schmid -- 05. Juni 2018
 
 Falkenstein
 
-## Theoretische Grundlage: Evolutionary Archaeology
+# Theory ⇓
+
+## Theoretical basis: Evolutionary Archaeology
 
 **Cultural evolution theory**: 
 Die Prozesse der natürlichen Entwicklung von Spezies durch Evolution wirken auch bei der menschlichen Kulturentwicklung.
@@ -243,6 +250,8 @@ Die Prozesse der natürlichen Entwicklung von Spezies durch Evolution wirken auc
 ```
 
 <iframe src="http://127.0.0.1:3541" style="width: 8000px; height: 700px"></iframe>
+
+# Model & Simulation ⇓
 
 ## Population graph
 
@@ -450,6 +459,8 @@ void Idea::expand() {
 </figure>
 
 ## Spatio-temporal development (simulation)
+
+# ToDo ⇓
 
 ## Methode und Fragen
 
