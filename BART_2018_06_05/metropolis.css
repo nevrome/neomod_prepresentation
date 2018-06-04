@@ -220,7 +220,7 @@ h1.title {
     display: block;
     padding: 5px;
     overflow: auto;
-    max-height: 400px;
+    max-height: calc(80vh);
     word-wrap: normal; }
 
 .reveal table {
@@ -289,7 +289,6 @@ h1.title {
     border: none;
     box-shadow: none;
     max-height: calc(80vh);
-    max-width: calc(80vw);
     display: block;
     margin-left: auto;
     margin-right: auto;
