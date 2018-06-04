@@ -51,7 +51,7 @@ ui <- fluidPage(
     sliderInput("t_homogeneity_drift_with_innovation", label = "t",
                 min = 50, max = 200, value = 100, step = 50),
     sliderInput("mu_homogeneity_drift_with_innovation", label = "μ",
-                min = 0, max = 1, value = 0.1, step = 0.1)
+                min = 0, max = 1, value = 0, step = 0.1)
   ),
   plotOutput("simplot")
 )

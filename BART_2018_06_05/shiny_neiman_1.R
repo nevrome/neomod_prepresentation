@@ -101,7 +101,7 @@ ui <- fluidPage(
     sliderInput("t_drift_simulation_with_innovation", label = "t",
                 min = 50, max = 200, value = 100, step = 50),
     sliderInput("mu_drift_simulation_with_innovation", label = "μ",
-                min = 0, max = 0.1, value = 0.01, step = 0.01),
+                min = 0, max = 0.1, value = 0, step = 0.01),
     actionButton("run_button_drift_simulation_with_innovation", "Run simulation")
   ),
   plotOutput("simplot")
