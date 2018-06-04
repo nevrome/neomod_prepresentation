@@ -283,10 +283,10 @@ https://nevrome.shinyapps.io/neiman1995/
     - Verhalten: **Reproduktion** durch Expansion (und Kooperation?)
 </div>
 
-## Temporal Dynamics of Drift (and Innovation)
+## Temporal dynamics of drift
 
 ```{r}
-#system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_1.R)), port = 3539)'; bash\\\"\" -T \"Run and ready\"", wait = F)
+system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_1.R)), port = 3539)'; bash\\\"\" -T \"Run and ready\"", wait = F)
 ```
 
 <iframe src="http://127.0.0.1:3539" style="width: 8000px; height: 650px"></iframe>
@@ -296,10 +296,10 @@ https://nevrome.shinyapps.io/neiman1995/
 - $t$: Time / number of iterations
 - ($μ$: Innovation rate. Probability of the creation of a new variant)
 
-## Dynamics of Stylistic Distance between Two Groups
+## Temporal dynamics of drift and flow
 
 ```{r}
-#system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_3.R)), port = 3541)'; bash\\\"\" -T \"Run and ready\"", wait = F)
+system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_3.R)), port = 3541)'; bash\\\"\" -T \"Run and ready\"", wait = F)
 ```
 
 <iframe src="http://127.0.0.1:3541" style="width: 8000px; height: 650px"></iframe>
