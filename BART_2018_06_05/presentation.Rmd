@@ -37,6 +37,26 @@ Clemens Schmid -- 05. Juni 2018
   <figcaption>© Michael Codd -- Devil's Jumps, Treyford, West Sussex, Barrow Cemetery -- West Sussex County Council, www.artuk.org [03.06.18]</figcaption>
 </figure>
 
+## Presentation Bronze Age Round Table 
+
+<font size="6">**A computational Cultural Transmission model of burial rites in Central, Northern and North-western Europe**</font>
+
+Clemens Schmid -- 05. Juni 2018
+
+- **Context: Burial rites in Central Europe**
+- **Data**
+  - Overview
+  - The case of Southwestern Germany (Falkenstein)
+- **Theory**
+  - Cultural Evolution
+  - Transmission of neutral variants (Dunnel + Neiman)
+- **Model & Simulation**
+  - Population generation
+  - Simulation implementation
+  - First simultation runs
+
+⚠ work in progress ⚠
+
 ## RADON-B date distribution
 
 <figure>
