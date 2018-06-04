@@ -69,7 +69,7 @@ ui <- fluidPage(
     sliderInput("t_two_groups", label = "t",
                 min = 50, max = 200, value = 100, step = 50),
     sliderInput("mi_two_groups", label = "mi",
-                min = 0, max = 1, value = 0.1, step = 0.01),
+                min = 0, max = 1, value = 0, step = 0.01),
     actionButton("run_button_group_drift_simulation", "Run simulation")
   ),
   plotOutput("simplot")
