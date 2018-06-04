@@ -222,6 +222,40 @@ models_grid <- expand.grid(
 
 ```
 
+## Expansion
+
+```{cpp eval = FALSE, echo = TRUE}
+void Idea::expand() {
+  
+  // get all neighboring nodes
+  std::vector<int> all_neighbors = this->get_all_neighboring_nodes();
+  // remove duplicates from neighbors
+  std::vector<int> neighbors_without_doubles = remove_duplicates(all_neighbors);
+  // remove the current nodes from neighbors
+  std::vector<int> neighbors = erase_elements_of_second_vector_from_the_first(
+    neighbors_without_doubles, this->current_nodes
+  );
+  
+  // make decision: which neighbors can be converted
+  std::vector<int> converted = this->select_nodes_to_convert(neighbors);
+  
+  // delete current nodes from graph
+  for (auto& i : this->current_nodes) {
+    if(this->realworld->does_node_exist(i)) {
+      this->realworld->delete_nodes(i);
+      this->dead_nodes.push_back(i);
+    }
+  }
+  
+  // forget current nodes and make neighbors new current nodes
+  this->current_nodes.clear();
+  this->current_nodes.insert(
+    this->current_nodes.end(), converted.begin(), converted.end()
+  );
+  
+}
+```
+
 ## Populationsgraph: Individuen
 
 ```{r, out.width = '100%', fig.height = 7}
