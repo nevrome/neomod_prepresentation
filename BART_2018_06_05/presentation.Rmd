@@ -27,7 +27,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Presentation Bronze Age Round Table 
 
-<font size="6">**A computational Cultural Transmission model of burial rites in Central, Northern and North-western Europe**</font>
+<font size="6">**A computational Cultural Transmission model of Bronze Age burial rites in Central, Northern and North-western Europe**</font>
 
 Clemens Schmid -- 05. Juni 2018
 
@@ -38,17 +38,19 @@ Clemens Schmid -- 05. Juni 2018
 
 ## Presentation Bronze Age Round Table 
 
-<font size="6">**A computational Cultural Transmission model of burial rites in Central, Northern and North-western Europe**</font>
+<font size="6">**A computational Cultural Transmission model of Bronze Age burial rites in Central, Northern and North-western Europe**</font>
 
 Clemens Schmid -- 05. Juni 2018
 
+\
+
 - **Context: Burial rites in Central Europe**
 - **Data**
-  - Overview
-  - The case of Southwestern Germany (Falkenstein)
+  - Overview: Radon-B
+  - The case of Southwestern Germany (Falkenstein 2017)
 - **Theory**
   - Cultural Evolution
-  - Transmission of neutral variants (Dunnel + Neiman)
+  - Transmission of neutral variants (Dunnell 1978 + Neiman 1995)
 - **Model & Simulation**
   - Population generation
   - Expansion Algorithm
@@ -56,7 +58,15 @@ Clemens Schmid -- 05. Juni 2018
 
 ⚠ work in progress ⚠
 
-# Context ⇓
+## 
+
+\
+\
+\
+
+<font size="20">**Context**</font>
+
+<hr>
 
 ## Burial customs of the European Bronze Age
 
@@ -102,7 +112,15 @@ Clemens Schmid -- 05. Juni 2018
 - cremation burial is (almost) everywhere: Urnfield Period
 </div>
 
-# Data ⇓
+## 
+
+\
+\
+\
+
+<font size="20">**Data**</font>
+
+<hr>
 
 ## Quantitative recording of phenomena: RADON-B
 
@@ -115,8 +133,10 @@ Clemens Schmid -- 05. Juni 2018
 
 - **2336** Dates from graves between 2200 and 800 calBC
 - Metainformation
-     - 1465 dates from this with an entry for the dimension **Inhumation/Cremation (935/530)**
-     - 915 dates from this with an entry for the dimension **Flat grave/Burial mound (459/456)**
+     - **1465** dates from this with an entry for the dimension     
+       Inhumation/Cremation (935/530)
+     - **915** dates from this with an entry for the dimension    
+       Flat grave/Burial mound (459/456)
      - **753** dates with specifications for both contexts
 </div>
 
@@ -134,9 +154,9 @@ Clemens Schmid -- 05. Juni 2018
   <figcaption>Artifical research area (rectangular form in Europe Albers Equal Area Conic EPSG: 102013) </figcaption>
 </figure>
 
-## 
+##
 
-<section data-background-video="figures/the_movie_4.mp4" data-background-color="#f1f1f1">
+<section data-background-video="figures/the_movie_4.mp4" data-background-color="#f1f1f1"> 
 </section>
 
 ## Diachronic perspective
@@ -183,7 +203,15 @@ Clemens Schmid -- 05. Juni 2018
 
 Falkenstein
 
-# Theory ⇓
+## 
+
+\
+\
+\
+
+<font size="20">**Theory**</font>
+
+<hr>
 
 ## Theoretical basis: Evolutionary Archaeology
 
@@ -251,7 +279,15 @@ Die Prozesse der natürlichen Entwicklung von Spezies durch Evolution wirken auc
 
 <iframe src="http://127.0.0.1:3541" style="width: 8000px; height: 700px"></iframe>
 
-# Model & Simulation ⇓
+## 
+
+\
+\
+\
+
+<font size="20">**Model & Simulation**</font>
+
+<hr>
 
 ## Population graph
 
@@ -460,7 +496,15 @@ void Idea::expand() {
 
 ## Spatio-temporal development (simulation)
 
-# ToDo ⇓
+## 
+
+\
+\
+\
+
+<font size="20">**ToDo**</font>
+
+<hr>
 
 ## Methode und Fragen
 
