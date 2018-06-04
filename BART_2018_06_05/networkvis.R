@@ -70,7 +70,8 @@ nodes2 <- nodes0
 #1
 nodes2$color.background[c(1)] <- "orange"
 nodes2$color.background[c(12)] <- "blue"
-visNetwork(nodes2, edges4) %>% visHierarchicalLayout() 
+visNetwork(nodes2, edges4) %>% visHierarchicalLayout() %>% visSaveFix(file = "BART_2018_06_05/network_html/01.html")
+
 
 #2 
 nodes2$color.background[c(2, 6)] <- "orange"
@@ -84,7 +85,20 @@ nodes2[nodes2$id %in% c(13), ]$color.background <- "blue"
 visNetwork(nodes2, edges4) %>% visHierarchicalLayout() 
 
 #4
-nodes2[nodes2$id %in% c(2, 6, 11, 15, 14), ] <- NULL
-nodes2[nodes2$id %in% c(3, 8, 9, 10), ]$color.background <- "orange"
-nodes2[nodes2$id %in% c(13), ]$color.background <- "blue"
+nodes2 <- nodes2[!(nodes2$id %in% c(2, 6, 11, 15, 14)), ]
+nodes2[nodes2$id %in% c(16, 17, 18), ]$color.background <- "orange"
+nodes2[nodes2$id %in% c(20), ]$color.background <- "blue"
+visNetwork(nodes2, edges4) %>% visHierarchicalLayout() 
+
+#5
+nodes2 <- nodes2[!(nodes2$id %in% c(3, 8, 9, 10, 13)), ]
+nodes2[nodes2$id %in% c(19), ]$color.background <- "blue"
+visNetwork(nodes2, edges4) %>% visHierarchicalLayout() 
+
+#6
+nodes2 <- nodes2[!(nodes2$id %in% c(16, 17, 18, 20)), ]
+visNetwork(nodes2, edges4) %>% visHierarchicalLayout() 
+
+#7 
+nodes2 <- nodes2[!(nodes2$id %in% c(19)), ]
 visNetwork(nodes2, edges4) %>% visHierarchicalLayout() 
