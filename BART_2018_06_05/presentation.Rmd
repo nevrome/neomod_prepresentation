@@ -50,10 +50,70 @@ Clemens Schmid -- 05. Juni 2018
   - Transmission of neutral variants (Dunnel + Neiman)
 - **Model & Simulation**
   - Population generation
-  - Simulation implementation
+  - Expansion Algorithm
   - First simultation runs
 
 ⚠ work in progress ⚠
+
+## Bestattungsbräuche der europäischen Bronzezeit
+
+- Gräber und Gräberfelder sind eine wesentliche Kategorie der Bronzezeitforschung
+
+\
+
+<div class="fragment" data-fragment-index="2">
+- räumliche und zeitliche **Heterogenität der Phänomene**
+     - Grabanlage- und Vergesellschaftung (Nachnutzung neolithischer Megalithik, Gräberfelder, etc.) 
+     - Grabbau (Särge, Totenhäuser, Bootsgräber, etc.)
+     - Beigabenauswahl 
+     - Platzierung des Leichnams
+     - ...
+</div>
+
+\
+
+<div class="fragment" data-fragment-index="3">
+- **Hauptspannungsfelder**
+    - Körperbestattung vs. Brandbestattung
+    - Flachgrab vs. Hügelgrab
+</div>
+    
+## Klassisches Narrativ der Entwicklung bronzezeitlicher Bestattungssitten
+
+<div class="fragment" data-fragment-index="1">
+**Frühe und Mittlere Bronzezeit**
+
+- Körperbestattungen (in verschiedenen Variationen)
+- Brandgräber dominieren zunächst nur in der Ungarischen Tiefebene
+</div>
+<div class="fragment" data-fragment-index="2">
+- Hügelgräber in Ost-, West- und Nordeuropa
+- Flachgräber in Zentral- und Südeuropa, Überhügelung gewinnt langsam an Bedeutung 
+</div>
+
+\
+
+<div class="fragment" data-fragment-index="3">
+**Späte Bronzezeit**
+
+- Brandbestattung setzt sich (fast) überall durch: *Urnenfelderzeit*
+</div>
+
+## Quantitative Erfassung der Phänomene: RADON-B
+
+<figure>
+  <img src="figures/radonb.jpg" alt="radon-b" align="middle">
+</figure>
+
+<div class="fragment" data-fragment-index="1">
+<sup>14</sup>C-Daten mit Kontextinformationen
+
+- **3059** Daten an Gräbern aus einem Zeitfenster 2500 -- 500 calBC
+- Metainformationen
+     - 1792 Daten daraus mit einer Angabe zur Dimension **Körpergrab/Brandgrab (1153/639)**
+     - 1091 Daten daraus mit einer Angabe zur Dimension **Flachgrab/Hügelgrab (585/506)**
+     - **901** Daten mit Angaben zu beiden Kontexten
+</div>
 
 ## RADON-B date distribution
 
@@ -117,6 +177,48 @@ Clemens Schmid -- 05. Juni 2018
 ## Closer look: Southwestern Germany
 
 Falkenstein
+
+## Theoretische Grundlage: Evolutionary Archaeology
+
+**Cultural evolution theory**: 
+Die Prozesse der natürlichen Entwicklung von Spezies durch Evolution wirken auch bei der menschlichen Kulturentwicklung.
+
+\
+
+<div class="fragment" data-fragment-index="1">
+- **Evolutionismus** (und Sozialdarwinismus) -- Kulturrelativismus -- **Neoevolutionismus** & Multilineare Evolution
+</div>
+
+\
+
+<div class="fragment" data-fragment-index="2">
+- Neue Perspektiven ab den 1970ern
+    - **Evolutionary psychology**
+    - **Human behavioural ecology**
+    - **Dual inheritance theory**: Kultur bildet ein zweites, viel dynamischeres Vererbungssystem, das genetisch determiniertes Verhalten hinter sich lässt.
+</div>
+
+## Cultural Transmission and Evolution
+
+- Bestattungsrituale sind **Verhalten/Ideen/Cultural Traits/Meme** und breiten sich in **Raum und Zeit** aus.
+
+<div class="fragment" data-fragment-index="1">
+- Bestattungsrituale sind eine **besondere Kategorie** von Ideen: Sie haben eine **relativ geringe Wechselwirkung** mit dem **Mensch-Umwelt-System**.
+</div>
+
+<div class="fragment" data-fragment-index="2">
+- Stattdessen leben Bestattungsrituale vor allem im **sozialen Raum** und ihre Ausbreitung ist von sozialen Beziehungen abhängig. 
+</div>
+
+
+\
+
+<div class="fragment" data-fragment-index="3">
+- Abbildung in einem abstrakten Modell
+    - Landschaft: **Diachroner Populationsgraph** aus einem Populationsgenerator
+    - Entitäten: Ideen (**the meme's eye view**)
+    - Verhalten: **Reproduktion** durch Expansion (und Kooperation?)
+</div>
 
 ## Temporal Dynamics of Drift (and Innovation)
 
@@ -346,3 +448,20 @@ void Idea::expand() {
   <img src="network_figures/10.png">
   <figcaption>Idea expansion 6</figcaption>
 </figure>
+
+## Spatio-temporal development (simulation)
+
+## Methode und Fragen
+
+Implementierung eines **Computermodells** in R und C++ zur Simulation der **Transmission** einer **besonderen Ideenkategorie** in Abgleich zu **archäologischen Daten**.
+
+<div class="fragment" data-fragment-index="2">
+- Mit welcher **Geschwindigkeit** breitet sich diese Ideenkategorie bei verschiedenen **Populationsparametern** aus?
+- Über welche **Ausbreitungsmodi** und Kanäle verbreitet sich diese Ideenkategorie primär?
+- Welche Rolle spielen die klassischen Axiome der **Diffusion of Innovation** Forschung (z.B. Tradition vs. Innovation, Early Adopters vs. Laggards) für sehr **stabile Ideen über lange Zeiträume**?
+</div>
+
+<div class="fragment" data-fragment-index="3">
+- Erklären **diachrone Veränderungen der Populationsparameter** Ablöseereignisse (z.B. Bottlenecks)?
+- Ist die räumlich-zeitliche **Korrelation verschiedener Ideen** Ausdruck kausaler Beziehungen oder Nebeneffekt von Transmissionsstrukturen?
+</div>
