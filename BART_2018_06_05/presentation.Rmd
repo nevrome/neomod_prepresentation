@@ -541,7 +541,26 @@ void Idea::expand() {
 }
 ```
 
-## Spatio-temporal development (simulation)
+## Very first results
+
+<figure>
+  <img src="figures/development_proportions_regions_simulation_example_0.jpeg">
+</figure>
+
+
+## Very first results
+
+<figure>
+  <img src="figures/development_proportions_regions_simulation_example_001.jpeg">
+</figure>
+
+
+## Very first results
+
+<figure>
+  <img src="figures/development_proportions_regions_simulation_example_01.jpeg">
+</figure>
+
 
 ## 
 
