@@ -47,14 +47,14 @@ Clemens Schmid -- 05. Juni 2018
 - **Context: Burial rites in Central Europe**
 - **Data**
   - Overview: Radon-B
-  - The case of Southwestern Germany (Falkenstein 2017)
+  - Accuracy check in Southern Germany (Falkenstein 2017)
 - **Theory**
   - Cultural Evolution
-  - Transmission of neutral variants (Dunnell 1978 + Neiman 1995)
+  - Transmission of Neutral Variants (Dunnell 1978 + Neiman 1995)
 - **Model & Simulation**
   - Population generation
   - Expansion Algorithm
-  - First simultation runs
+  - First simulation runs: Proof of concept
 
 ⚠ work in progress ⚠
 
@@ -151,7 +151,7 @@ Clemens Schmid -- 05. Juni 2018
 
 <figure>
   <img src="figures/general_map_research_area_unzoomed.jpeg">
-  <figcaption>Artifical research area (rectangular form in Europe Albers Equal Area Conic EPSG: 102013) </figcaption>
+  <figcaption>Artificial research area (rectangular form in Europe Albers Equal Area Conic EPSG: 102013) </figcaption>
 </figure>
 
 ##
@@ -252,7 +252,7 @@ The processes of natural development of species through evolution also affect hu
 - Funeral rituals are **behaviour/ideas/cultural traits/memes** and spread in space and time. They life in **social space** and their spread depends on social relationships.
 
 <div class="fragment" data-fragment-index="1">
-- Funeral rituals are a **special category** of ideas: They have a **relatively low interaction** with the **human-environment system**: they can be treated as **selectively neutral**.
+- Funeral rituals are a **special category** of ideas: They have a **relatively low interaction** with the **human-environment system** and can be treated as **selectively neutral**.
 </div>
 
 <div class="fragment" data-fragment-index="2">
@@ -324,7 +324,7 @@ system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(sub
 
 ## Idea
 
-If there's a relation of population size, intergroup interaction and intergroup homogeneity, is it possible to get better insights into population level parameters with a transmission model that describes population in more sophisticated terms? 
+If there's a relation of **population size**, **intergroup interaction** and **intergroup homogeneity**, is it possible to get better insights into population level parameters with a transmission model that describes population in more sophisticated terms? 
 
 <div class="fragment" data-fragment-index="1">
 ⇒ Implementation of a **computer model** in R and C++ to simulate the **transmission** of a **special idea category** in comparison to **archaeological data**.
@@ -448,7 +448,7 @@ models_grid <- expand.grid(
 
 <figure>
   <img src="figures/population_graph_connection_0.jpeg">
-  <figcaption>Constant population size of 40, 1400 years, Cross unit horizontal contact proportion: 0</figcaption>
+  <figcaption>Fruchterman Reingold layout, Constant population size of 40, 1400 years, Cross unit horizontal contact proportion: 0</figcaption>
 </figure>
 
 
@@ -456,7 +456,7 @@ models_grid <- expand.grid(
 
 <figure>
   <img src="figures/population_graph_connection_001.jpeg">
-  <figcaption>Constant population size of 40, 1400 years, Cross unit horizontal contact proportion: 0.01</figcaption>
+  <figcaption>Fruchterman Reingold layout, Constant population size of 40, 1400 years, Cross unit horizontal contact proportion: 0.01</figcaption>
 </figure>
 
 
@@ -464,7 +464,7 @@ models_grid <- expand.grid(
 
 <figure>
   <img src="figures/population_graph_connection_01.jpeg">
-  <figcaption>Constant population size of 40, 1400 years, Cross unit horizontal contact proportion: 0.1</figcaption>
+  <figcaption>Fruchterman Reingold layout, Constant population size of 40, 1400 years, Cross unit horizontal contact proportion: 0.1</figcaption>
 </figure>
 
 ## Idea behaviour -- Concept
@@ -598,7 +598,7 @@ void Idea::expand() {
 
 <div class="fragment" data-fragment-index="2">
 - Real world data
-  - Integroup time series comparison to establish an inductive measurand for intergroup connectedness
+  - Intergroup time series comparison to establish an inductive measurand for intergroup connectedness
   - Brief but systematic estimation of sample representativeness
 </div>  
 
