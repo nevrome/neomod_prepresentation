@@ -53,7 +53,7 @@ Clemens Schmid -- 05. Juni 2018
   - Transmission of Neutral Variants (Dunnell 1978 + Neiman 1995)
 - **Model & Simulation**
   - Population generation
-  - Expansion Algorithm
+  - Expansion algorithm
   - First simulation runs: Proof of concept
 
 ⚠ work in progress ⚠
@@ -235,13 +235,13 @@ Falkenstein, F. (2017). Zum Wandel der Bestattungssitten von der Hügelgräber- 
 
 ## Theoretical basis: Evolutionary Archaeology
 
-**Cultural evolution theory**: 
+**Cultural Evolution theory**: 
 The processes of natural development of species through evolution also affect human cultural development.
 
 \
 
 <div class="fragment" data-fragment-index="1">
-- **Evolutionism** (und Social Darwinism) -- Cultural Relativism -- **Neoevolutionism** & Multilineal evolution
+- **Evolutionism** (and Social Darwinism) -- Cultural Relativism -- **Neoevolutionism** & Multilineal evolution
 </div>
 
 \
