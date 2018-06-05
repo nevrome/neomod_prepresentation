@@ -543,26 +543,31 @@ void Idea::expand() {
 }
 ```
 
-## Very first results
+## Very first results -- Proof of concept
 
 <figure>
   <img src="figures/development_proportions_regions_simulation_example_0.jpeg">
 </figure>
 
 
-## Very first results
+## Very first results -- Proof of concept
 
 <figure>
   <img src="figures/development_proportions_regions_simulation_example_001.jpeg">
 </figure>
 
 
-## Very first results
+## Very first results -- Proof of concept
 
 <figure>
   <img src="figures/development_proportions_regions_simulation_example_01.jpeg">
 </figure>
 
+## Very first results -- Proof of concept
+
+<figure>
+  <img src="figures/0_001_01.png">
+</figure>
 
 ## 
 
