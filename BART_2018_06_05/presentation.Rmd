@@ -144,15 +144,17 @@ Clemens Schmid -- 05. Juni 2018
 
 <figure>
   <img src="figures/general_map.jpeg">
-  <figcaption>All ^14^C-dates from graves 2200-800calBC</figcaption>
 </figure>
+
+All ^14^C-dates from graves 2200-800calBC
 
 ## Research area 
 
 <figure>
   <img src="figures/general_map_research_area_unzoomed.jpeg">
-  <figcaption>Artificial research area (rectangular form in Europe Albers Equal Area Conic EPSG: 102013) </figcaption>
 </figure>
+
+Rectangle in Europe Albers Equal Area Conic (EPSG: 102013)
 
 ##
 
@@ -163,22 +165,23 @@ Clemens Schmid -- 05. Juni 2018
 
 <figure>
   <img src="figures/general_map_research_area_timeslices.jpeg">
-  <figcaption>Timeslices of 200 years in between 2200-800calBC</figcaption>
 </figure>
+
+Timeslices of 200 years in between 2200-800calBC
 
 ## Artificial comparison regions based on a regular grid 
 
 <figure>
   <img src="figures/general_map_research_area_regions.jpeg">
-  <figcaption>Grid point distance: 400km, Circle radius: 240km, only regions with >=70 graves were kept</figcaption>
 </figure>
+
+Point distance: 400km, Circle radius: 240km, only circles with >= 70
 
 ## Spatio-temporal development (amount of graves)
 
 <div id="left">
   <figure>
     <img src="figures/development_amount_regions_burial_type.jpeg">
-    <figcaption>Grave counted as present if year within ^14^C 2σ range</figcaption>
   </figure>
 </div>
 <div id="right">
@@ -187,12 +190,13 @@ Clemens Schmid -- 05. Juni 2018
   </figure>
 </div>
 
+Grave counted as present if year within ^14^C 2σ range
+
 ## Spatio-temporal development (proportion of ideas)
 
 <div id="left">
   <figure>
     <img src="figures/development_proportions_regions_burial_type.jpeg">
-    <figcaption>The category "unknown" was ignored for the proportion calculation</figcaption>
   </figure>
 </div>
 <div id="right">
@@ -201,21 +205,23 @@ Clemens Schmid -- 05. Juni 2018
   </figure>
 </div>
 
-## Closer look: Southwestern Germany
+The category "unknown" was ignored for the proportion calculation
 
-Falkenstein, F. (2017). Zum Wandel der Bestattungssitten von der Hügelgräber- zur Urnenfelderkultur in Süddeutschland. In D. Brandherm & B. Nessel (Eds.), Phasenübergänge und Umbrüche im bronzezeitlichen Europa (pp. 77–96). Bonn.
+## Closer look: Southwestern Germany
 
 <figure>
   <img src="figures/falkenstein_burial_type.png">
 </figure>
 
-## Closer look: Southwestern Germany
-
 Falkenstein, F. (2017). Zum Wandel der Bestattungssitten von der Hügelgräber- zur Urnenfelderkultur in Süddeutschland. In D. Brandherm & B. Nessel (Eds.), Phasenübergänge und Umbrüche im bronzezeitlichen Europa (pp. 77–96). Bonn.
+
+## Closer look: Southwestern Germany
 
 <figure>
   <img src="figures/falkenstein_burial_construction.png">
 </figure>
+
+Falkenstein, F. (2017). Zum Wandel der Bestattungssitten von der Hügelgräber- zur Urnenfelderkultur in Süddeutschland. In D. Brandherm & B. Nessel (Eds.), Phasenübergänge und Umbrüche im bronzezeitlichen Europa (pp. 77–96). Bonn.
 
 ## 
 
@@ -288,7 +294,7 @@ https://nevrome.shinyapps.io/neiman1995/
 ## Temporal dynamics of drift
 
 ```{r}
-system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_1.R)), port = 3539)'; bash\\\"\" -T \"Run and ready\"", wait = F)
+#system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_1.R)), port = 3539)'; bash\\\"\" -T \"Run and ready\"", wait = F)
 ```
 
 <iframe src="http://127.0.0.1:3539" style="width: 8000px; height: 650px"></iframe>
@@ -301,7 +307,7 @@ system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(sub
 ## Temporal dynamics of drift and flow
 
 ```{r}
-system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_3.R)), port = 3541)'; bash\\\"\" -T \"Run and ready\"", wait = F)
+#system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(substitute(shiny_neiman_3.R)), port = 3541)'; bash\\\"\" -T \"Run and ready\"", wait = F)
 ```
 
 <iframe src="http://127.0.0.1:3541" style="width: 8000px; height: 650px"></iframe>
@@ -342,29 +348,33 @@ If there's a relation of **population size**, **intergroup interaction** and **i
 
 <figure>
   <img src="network_figures/01.png">
-  <figcaption>Population graph, no connection</figcaption>
 </figure>
+
+Population graph, no connection
 
 ## Population graph -- Concept
 
 <figure>
   <img src="network_figures/02.png">
-  <figcaption>Population graph, couples (special horizontal relationship)</figcaption>
 </figure>
+
+Population graph, couples (special horizontal relationship)
 
 ## Population graph -- Concept
 
 <figure>
   <img src="network_figures/03.png">
-  <figcaption>Population graph, vertical relations</figcaption>
 </figure>
+
+Population graph, vertical relations
 
 ## Population graph -- Concept
 
 <figure>
   <img src="network_figures/04.png">
-  <figcaption>Population graph, horizontal and oblique relations</figcaption>
 </figure>
+
+Population graph, horizontal and oblique relations
 
 ## Population graph -- Actual implementation
 
@@ -448,66 +458,73 @@ models_grid <- expand.grid(
 
 <figure>
   <img src="figures/population_graph_connection_0.jpeg">
-  <figcaption>Fruchterman Reingold layout, Constant population size of 40, 1400 years, Cross unit horizontal contact proportion: 0</figcaption>
 </figure>
 
+Fruchterman Reingold, Cross unit horizontal contact proportion: 0
 
 ## Population graph -- Actual implementation
 
 <figure>
   <img src="figures/population_graph_connection_001.jpeg">
-  <figcaption>Fruchterman Reingold layout, Constant population size of 40, 1400 years, Cross unit horizontal contact proportion: 0.01</figcaption>
 </figure>
 
+Cross unit horizontal contact proportion: 0.01
 
 ## Population graph -- Actual implementation
 
 <figure>
   <img src="figures/population_graph_connection_01.jpeg">
-  <figcaption>Fruchterman Reingold layout, Constant population size of 40, 1400 years, Cross unit horizontal contact proportion: 0.1</figcaption>
 </figure>
+
+Cross unit horizontal contact proportion: 0.1
 
 ## Idea behaviour -- Concept
 
 <figure>
   <img src="network_figures/05.png">
-  <figcaption>Idea expansion 1</figcaption>
 </figure>
+
+Idea expansion step: 0 (initial setup)
 
 ## Idea behaviour -- Concept
 
 <figure>
   <img src="network_figures/06.png">
-  <figcaption>Idea expansion 2</figcaption>
 </figure>
+
+Idea expansion step: 1 (first expansion)
 
 ## Idea behaviour -- Concept
 
 <figure>
   <img src="network_figures/07.png">
-  <figcaption>Idea expansion 3</figcaption>
 </figure>
+
+Idea expansion step: 2 (very first nodes die)
 
 ## Idea behaviour -- Concept
 
 <figure>
   <img src="network_figures/08.png">
-  <figcaption>Idea expansion 4</figcaption>
 </figure>
+
+Idea expansion step: 3
 
 ## Idea behaviour -- Concept
 
 <figure>
   <img src="network_figures/09.png">
-  <figcaption>Idea expansion 5</figcaption>
 </figure>
+
+Idea expansion step: 4
 
 ## Idea behaviour -- Concept
 
 <figure>
   <img src="network_figures/10.png">
-  <figcaption>Idea expansion 6</figcaption>
 </figure>
+
+Idea expansion step: 5 (scorched earth)
 
 ## Idea behaviour -- Actual implementation
 
@@ -549,6 +566,7 @@ void Idea::expand() {
   <img src="figures/development_proportions_regions_simulation_example_0.jpeg">
 </figure>
 
+Cross unit horizontal contact proportion: 0
 
 ## Very first results -- Proof of concept
 
@@ -556,6 +574,7 @@ void Idea::expand() {
   <img src="figures/development_proportions_regions_simulation_example_001.jpeg">
 </figure>
 
+Cross unit horizontal contact proportion: 0.01
 
 ## Very first results -- Proof of concept
 
@@ -563,17 +582,23 @@ void Idea::expand() {
   <img src="figures/development_proportions_regions_simulation_example_01.jpeg">
 </figure>
 
+Cross unit horizontal contact proportion: 0.1
+
 ## Very first results -- Proof of concept
 
 <figure>
   <img src="figures/0_001_01.png">
 </figure>
 
+90 simulation runs separated by region and cross unit contact
+
 ## Very first results -- Proof of concept
 
 <figure>
   <img src="figures/0_001_01_2.png">
 </figure>
+
+Mean regional standard deviation separated by cross unit contact
 
 ## 
 
@@ -585,7 +610,7 @@ void Idea::expand() {
 
 <hr>
 
-## ToDo
+## Most important things to do now:
 
 - Simulation
   - Development of better methods and visualizations for simulation result comparison
