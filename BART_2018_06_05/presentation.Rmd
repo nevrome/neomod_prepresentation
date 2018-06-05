@@ -326,6 +326,8 @@ system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(sub
 
 If there's a relation of population size, intergroup interaction and intergroup homogeneity, is it possible to get better insights into population level parameters with a transmission model that describes population in more sophisticated terms? 
 
+⇒ Implementation of a **computer model** in R and C++ to simulate the **transmission** of a **special idea category** in comparison to **archaeological data**.
+
 **Ingredients:**
 
 - Diachronic **population graph**
@@ -551,17 +553,20 @@ void Idea::expand() {
 
 <hr>
 
-## Methode und Fragen
+## ToDo
 
-Implementierung eines **Computermodells** in R und C++ zur Simulation der **Transmission** einer **besonderen Ideenkategorie** in Abgleich zu **archäologischen Daten**.
+- Simulation
+  - Development of better methods and visualizations for simulation result comparison
+  - Systematic exploration of the model parameters and their consequences
+
+<div class="fragment" data-fragment-index="1">
+- Theory
+  - Analysis of the special characteristics of death related cultural traits
+</div>  
 
 <div class="fragment" data-fragment-index="2">
-- Mit welcher **Geschwindigkeit** breitet sich diese Ideenkategorie bei verschiedenen **Populationsparametern** aus?
-- Über welche **Ausbreitungsmodi** und Kanäle verbreitet sich diese Ideenkategorie primär?
-- Welche Rolle spielen die klassischen Axiome der **Diffusion of Innovation** Forschung (z.B. Tradition vs. Innovation, Early Adopters vs. Laggards) für sehr **stabile Ideen über lange Zeiträume**?
-</div>
+- Real world data
+  - Integroup time series comparison to establish an inductive measurand for intergroup connectedness
+  - Brief but systematic estimation of sample representativeness
+</div>  
 
-<div class="fragment" data-fragment-index="3">
-- Erklären **diachrone Veränderungen der Populationsparameter** Ablöseereignisse (z.B. Bottlenecks)?
-- Ist die räumlich-zeitliche **Korrelation verschiedener Ideen** Ausdruck kausaler Beziehungen oder Nebeneffekt von Transmissionsstrukturen?
-</div>
