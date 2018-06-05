@@ -569,6 +569,12 @@ void Idea::expand() {
   <img src="figures/0_001_01.png">
 </figure>
 
+## Very first results -- Proof of concept
+
+<figure>
+  <img src="figures/0_001_01_2.png">
+</figure>
+
 ## 
 
 \
