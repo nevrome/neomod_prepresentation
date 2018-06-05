@@ -326,6 +326,7 @@ system("xfce4-terminal -e \"bash -c \\\"R -e 'getwd(); shiny::runApp(deparse(sub
 
 If there's a relation of population size, intergroup interaction and intergroup homogeneity, is it possible to get better insights into population level parameters with a transmission model that describes population in more sophisticated terms? 
 
+<div class="fragment" data-fragment-index="1">
 ⇒ Implementation of a **computer model** in R and C++ to simulate the **transmission** of a **special idea category** in comparison to **archaeological data**.
 
 **Ingredients:**
@@ -333,8 +334,9 @@ If there's a relation of population size, intergroup interaction and intergroup 
 - Diachronic **population graph**
     - Individuals
     - Relations
-- Entities: **ideas** (*the meme's eye view*)
+- Entities: **Ideas** (*the meme's eye view*)
 - Behaviour: **Reproduction** through expansion 
+</div>
 
 ## Population graph -- Concept
 
