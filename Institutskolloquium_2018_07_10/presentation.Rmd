@@ -1,0 +1,41 @@
+---
+title: "Beobachtungen zu räumlicher und kultureller Distanz"
+subtitle: Ein computerbasiertes Cultural Evolution Modell zur Ausbreitungsdynamik europäisch-bronzezeitlicher Bestattungssitten
+author: "Clemens Schmid"
+date: "10.7.2018"
+institute: Institut für Ur- und Frühgeschichte, CAU Kiel
+fontsize: 9pt
+output:
+  beamer_presentation:
+    theme: "metropolis"
+fig_caption: yes
+header-includes:
+  - \titlegraphic{\begin{picture}(0,0)\put(305,-90){\makebox(0,0)[rt]{\includegraphics[width=8cm]{figures/niels_bach_pyre.jpg}}}\put(275,-230){\tiny \textcopyright \ Niels Bach}\end{picture}}
+  - \makeatletter
+  - \let\@@magyar@captionfix\relax
+  - \makeatother
+  - \metroset{sectionpage=progressbar}
+  - \usepackage{subfig}
+  - \usepackage{caption}
+  - \usepackage{textcomp}
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, echo = FALSE}
+# https://stackoverflow.com/questions/25646333/code-chunk-font-size-in-rmarkdown-with-knitr-and-latex
+def.chunk.hook  <- knitr::knit_hooks$get("chunk")
+knitr::knit_hooks$set(chunk = function(x, options) {
+  x <- def.chunk.hook(x, options)
+  ifelse(options$size != "normalsize", paste0("\\", options$size,"\n\n", x, "\n\n \\normalsize"), x)
+})
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
+```
+
+# test
+
+# test
+
+
+
+
