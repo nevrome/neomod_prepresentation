@@ -18,6 +18,7 @@ header-includes:
   - \usepackage{subfig}
   - \usepackage{caption}
   - \usepackage{textcomp}
+  - \usepackage{changepage}
 editor_options: 
   chunk_output_type: console
 ---
@@ -34,7 +35,33 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 # test
 
-# test
+## test
+
+![test](../../neomod_datapool/plots/general_maps/general_map_research_area_unzoomed.jpeg){ height=90% }
+
+## test
+
+\begin{adjustwidth}{-3em}{-3em}
+  \begin{figure}
+    \includegraphics{../../neomod_datapool/plots/general_maps/general_map_research_area_timeslices.jpeg}
+    \caption{test}
+  \end{figure}
+\end{adjustwidth}
+
+## test
+
+![test](../../neomod_datapool/plots/general_maps/general_map_research_area_regions.jpeg){ height=90% }
+
+## test
+
+
+
+## test
+
+![test](../../neomod_datapool/plots/general_maps/general_map_distance_network.jpeg){ height=90% }
+
+## test
+
 
 
 
