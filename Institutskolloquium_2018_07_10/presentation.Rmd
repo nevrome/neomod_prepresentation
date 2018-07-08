@@ -54,7 +54,20 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 ## test
 
-
+\begin{columns}
+  \begin{column}{0.48\textwidth}
+    \begin{figure}
+      \includegraphics{../../neomod_datapool/plots/development/development_amount_regions_burial_type.jpeg}
+      \caption{test}
+    \end{figure}
+  \end{column}
+  \begin{column}{0.48\textwidth}
+    \begin{figure}
+      \includegraphics{../../neomod_datapool/plots/development/development_amount_regions_burial_construction.jpeg}
+      \caption{test}
+    \end{figure}
+  \end{column}
+\end{columns}
 
 ## test
 
