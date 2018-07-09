@@ -1,6 +1,6 @@
 ---
 title: "Observations about Behavioural and Spatial Distance"
-subtitle: Ein computerbasiertes Cultural Evolution Modell zur Ausbreitungsdynamik europäisch-bronzezeitlicher Bestattungssitten
+subtitle: Thesis -- "Ein computerbasiertes Cultural Evolution Modell zur Ausbreitungsdynamik europäisch-bronzezeitlicher Bestattungssitten"
 author: "Clemens Schmid"
 date: "10.7.2018"
 institute: Institut für Ur- und Frühgeschichte, CAU Kiel
@@ -19,6 +19,7 @@ header-includes:
   - \usepackage{caption}
   - \usepackage{textcomp}
   - \usepackage{changepage}
+  - \usepackage[absolute,overlay]{textpos}
 editor_options: 
   chunk_output_type: console
 ---
@@ -34,6 +35,17 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 ```
 
 ## TOC
+
+<!-- \textblockcolour{mDarkTeal} -->
+
+<!-- \begin{textblock*}{3em}(1em,1em) -->
+<!--   \setlength\fboxrule{2pt}% -->
+<!--   \noindent\fbox{% -->
+<!--     \begin{minipage}{\linewidth - 2\fboxsep - 2\fboxrule}% -->
+<!--       \small\itshape\color{white} -->
+<!--       Text Text Text  -->
+<!--     \end{minipage}}%  -->
+<!-- \end{textblock*} -->
 
 - Introduction
 
