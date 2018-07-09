@@ -20,6 +20,7 @@ header-includes:
   - \usepackage{textcomp}
   - \usepackage{changepage}
   - \usepackage[absolute,overlay]{textpos}
+  - \usepackage[texcoord,grid,gridunit=pt,gridcolor=red!10,subgridcolor=green!10]{eso-pic}
 editor_options: 
   chunk_output_type: console
 ---
@@ -36,16 +37,7 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 ## TOC
 
-<!-- \textblockcolour{mDarkTeal} -->
-
-<!-- \begin{textblock*}{3em}(1em,1em) -->
-<!--   \setlength\fboxrule{2pt}% -->
-<!--   \noindent\fbox{% -->
-<!--     \begin{minipage}{\linewidth - 2\fboxsep - 2\fboxrule}% -->
-<!--       \small\itshape\color{white} -->
-<!--       Text Text Text  -->
-<!--     \end{minipage}}%  -->
-<!-- \end{textblock*} -->
+\textblockcolour{mDarkTeal}
 
 - Introduction
 
@@ -61,20 +53,29 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 ## Data
 
-![Radon-B ^14^C dates on graves 2200-800 calBC (Albers Equal Area Conic)](../../neomod_datapool/plots/general_maps/general_map_research_area_unzoomed.jpeg){ height=90% }
+![Radon-B ^14^C dates of graves 2200-800 calBC (Albers Equal Area Conic)](../../neomod_datapool/plots/general_maps/general_map_research_area_unzoomed.jpeg){ height=90% }
 
 ## Data
 
 \begin{adjustwidth}{-3em}{-3em}
   \begin{figure}
     \includegraphics{../../neomod_datapool/plots/general_maps/general_map_research_area_timeslices.jpeg}
-    \caption{Development over time}
+    \caption{Development over time and space}
   \end{figure}
 \end{adjustwidth}
 
 ## Research Area and Regions
 
 ![Artifical Regions: 400km distance, 240km radius, >= 70 dates](../../neomod_datapool/plots/general_maps/general_map_research_area_regions.jpeg){ height=90% }
+
+\begin{textblock*}{65pt}(40pt,170pt)
+  \setlength\fboxrule{2pt}%
+  \noindent\fbox{%
+    \begin{minipage}{\linewidth - 2\fboxsep - 2\fboxrule}%
+      \small\color{white}
+      heterogeneous information density
+    \end{minipage}}%
+\end{textblock*}
 
 ## Development
 
