@@ -116,15 +116,21 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 ## Concept
 
+- **Cultural Evolution theory:** The processes of natural development of species through evolution are also relevant for human cultural development.
 
+- Funeral rituals are **behaviour/ideas/cultural traits** and spread in space and time. They life in **social space** and their spread depends on social relationships.
+
+- Funeral rituals are a special category of ideas: They have a relatively low interaction with the human-environment system and can be treated as **selectively neutral**.
+
+- The main mechanisms of diffusion of neutral variants are **innovation**, **drift** and **flow**.
+
+\noindent\rule{\textwidth}{1pt}
+
+Ideas are modelled as **entities** that expand competitively in a complex **population graph**. 
 
 ## Population Graph
 
 ![Example Population Graph (Fruchterman Reingold)](figures/population_graph_connection_001.jpeg){ height=90% }
-
-## Algorithm
-
-
 
 ## Generic Results
 
@@ -144,7 +150,15 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 ## Squared Euclidian Distance (SED)
 
+The Squared Euclidian Distance is a a simple **measure of between-group similarity**.
 
+$$d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2$$
+
+- $d_{ij}^2$: Squared Euclidean distance between two groups $i$ and $j$
+- $k$: Variant counter
+- $n$: Total amount of variants in a population
+- $p_{ik}$: Relative frequency of the $k$'th variant in population $i$
+- $p_{jk}$: Relative frequency of the $k$'th variant in population $j$
 
 ## Region Distance Matrix
 
