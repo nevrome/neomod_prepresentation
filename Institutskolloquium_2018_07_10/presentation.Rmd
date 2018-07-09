@@ -39,9 +39,11 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 \textblockcolour{mDarkTeal}
 
-- Introduction
+\huge
 
-- Simulation
+- Introduction (Data)
+
+- Simulation (Theory and Method)
 
 - Behavioural Distance
 
@@ -215,7 +217,7 @@ $$d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2$$
   \noindent\fbox{%
     \begin{minipage}{\linewidth - 2\fboxsep - 2\fboxrule}%
       \raggedright\footnotesize\color{white}
-      the gradual change from one tradition to the other in England and Southern Skandinavia evens out the distances
+      the gradual change from one tradition to the other in England and Southern Scandinavia evens out the distances
     \end{minipage}}%
 \end{textblock*}
 
@@ -346,6 +348,16 @@ $$d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2$$
     \end{minipage}}%
 \end{textblock*}
 
-## Preliminary Conclusion
 
 
+# Conclusion
+
+## Preliminary Observations and Hypotheses
+
+- The diffusion of the cremation funeral tradition and traditions of flat vs. mound graves can both be explained by **neutral variant drift and flow** on a large scale. Local innovation might not have been necessary.
+
+- Both contexts are mostly **independent**, except for a short period in the late Early Bronze Age.
+
+- Both contexts are to a certain degree correlated to **spatial distance** in the Early Bronze Age, but become **increasingly unpredictable** in the Middle Bronze Age.
+
+- The diffusion of cremation burials in the Middle and Late Bronze Age is **almost negatively correlated** with spatial distance.
