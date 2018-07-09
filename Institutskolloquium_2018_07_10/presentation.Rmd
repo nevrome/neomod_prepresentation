@@ -270,6 +270,15 @@ $$d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2$$
   \end{figure}
 \end{adjustwidth}
 
+\begin{textblock*}{60pt}(290pt,130pt)
+  \setlength\fboxrule{2pt}%
+  \noindent\fbox{%
+    \begin{minipage}{\linewidth - 2\fboxsep - 2\fboxrule}%
+      \raggedright\footnotesize\color{white}
+      spatial distance is only relevant \textbf{before} the widespread transformation starts
+    \end{minipage}}%
+\end{textblock*}
+
 ## Correlation
 
 \begin{adjustwidth}{-3em}{-3em}
@@ -279,9 +288,27 @@ $$d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2$$
   \end{figure}
 \end{adjustwidth}
 
+\begin{textblock*}{60pt}(290pt,130pt)
+  \setlength\fboxrule{2pt}%
+  \noindent\fbox{%
+    \begin{minipage}{\linewidth - 2\fboxsep - 2\fboxrule}%
+      \raggedright\footnotesize\color{white}
+      spatial distance is overall more relevant and again in the Early Bronze Age significant
+    \end{minipage}}%
+\end{textblock*}
+
 ## Correlation
 
 ![Correlation coefficient over time for 50 **simulation** runs and the **real world data**](../../neomod_datapool/plots/sed_simulation/mantel_test_many_simulations.jpeg){ height=90% }
+
+\begin{textblock*}{60pt}(300pt,30pt)
+  \setlength\fboxrule{2pt}%
+  \noindent\fbox{%
+    \begin{minipage}{\linewidth - 2\fboxsep - 2\fboxrule}%
+      \raggedright\footnotesize\color{white}
+      Compared to simulation results the expansion of cremation behaves highly atypical if we assume spatial correlation   
+    \end{minipage}}%
+\end{textblock*}
 
 ## Preliminary Conclusion
 
