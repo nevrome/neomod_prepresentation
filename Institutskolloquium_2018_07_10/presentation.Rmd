@@ -1,5 +1,5 @@
 ---
-title: "Beobachtungen zu räumlicher und kultureller Distanz"
+title: "Observations about Behavioural and Spatial Distance"
 subtitle: Ein computerbasiertes Cultural Evolution Modell zur Ausbreitungsdynamik europäisch-bronzezeitlicher Bestattungssitten
 author: "Clemens Schmid"
 date: "10.7.2018"
@@ -35,11 +35,11 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 # Introduction
 
-## test
+## Data
 
 ![test](../../neomod_datapool/plots/general_maps/general_map_research_area_unzoomed.jpeg){ height=90% }
 
-## test
+## Data
 
 \begin{adjustwidth}{-3em}{-3em}
   \begin{figure}
@@ -48,11 +48,11 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
   \end{figure}
 \end{adjustwidth}
 
-## test
+## Research Area and Regions
 
 ![test](../../neomod_datapool/plots/general_maps/general_map_research_area_regions.jpeg){ height=90% }
 
-## test
+## Development
 
 \begin{columns}
   \begin{column}{0.48\textwidth}
@@ -69,7 +69,7 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
   \end{column}
 \end{columns}
 
-## test
+## Development
 
 \begin{columns}
   \begin{column}{0.48\textwidth}
@@ -85,11 +85,6 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
     \end{figure}
   \end{column}
 \end{columns}
-
-
-## test
-
-![test](../../neomod_datapool/plots/general_maps/general_map_distance_network.jpeg){ height=90% }
 
 # Simulation
 
@@ -113,7 +108,7 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 ![test](../../neomod_datapool/plots/development_simulation/development_proportions_regions_simulation_improved_vis.jpeg){ height=90% }
 
-# Spatial and Behavioural Distance
+# Behavioural Distance
 
 ## Squared Euclidian Distance
 
@@ -129,3 +124,58 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 ![test](../../neomod_datapool/plots/sed/regions_regions_mean_squared_euclidian_distance_burial_construction.jpeg){ height=90% }
 
+## Parallel Developments
+
+\begin{columns}
+  \begin{column}{0.48\textwidth}
+    \begin{figure}
+      \includegraphics{../../neomod_datapool/plots/sed/regions_squared_euclidian_distance_burial_type.jpeg}
+      \caption{test}
+    \end{figure}
+  \end{column}
+  \begin{column}{0.48\textwidth}
+    \begin{figure}
+      \includegraphics{../../neomod_datapool/plots/sed/regions_squared_euclidian_distance_burial_construction.jpeg}
+      \caption{test}
+    \end{figure}
+  \end{column}
+\end{columns}
+
+## Correlation
+
+\begin{adjustwidth}{-3em}{-3em}
+  \begin{figure}
+    \includegraphics{../../neomod_datapool/plots/sed/squared_euclidian_distance_burial_type_vs_burial_construction.jpeg}
+    \caption{test}
+  \end{figure}
+\end{adjustwidth}
+
+# Behavioural and Spatial Distance
+
+## Spatial Distance Classes
+
+![test](../../neomod_datapool/plots/general_maps/general_map_distance_network.jpeg){ height=90% }
+
+## Correlation
+
+\begin{adjustwidth}{-3em}{-3em}
+  \begin{figure}
+    \includegraphics{../../neomod_datapool/plots/sed/squared_euclidian_distance_vs_spatial_distance_burial_type.jpeg}
+    \caption{test}
+  \end{figure}
+\end{adjustwidth}
+
+## Correlation
+
+\begin{adjustwidth}{-3em}{-3em}
+  \begin{figure}
+    \includegraphics{../../neomod_datapool/plots/sed/squared_euclidian_distance_vs_spatial_distance_burial_construction.jpeg}
+    \caption{test}
+  \end{figure}
+\end{adjustwidth}
+
+## Correlation
+
+![test](../../neomod_datapool/plots/sed_simulation/mantel_test_many_simulations.jpeg){ height=90% }
+
+## Preliminary Conclusion
