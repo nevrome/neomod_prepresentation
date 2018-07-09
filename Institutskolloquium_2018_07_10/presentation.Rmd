@@ -16,7 +16,7 @@ header-includes:
   - \makeatother
   - \metroset{sectionpage=progressbar}
   - \usepackage{subfig}
-  - \usepackage{caption}
+  - \usepackage[justification=centering]{caption}
   - \usepackage{textcomp}
   - \usepackage{changepage}
   - \usepackage[absolute,overlay]{textpos}
@@ -55,24 +55,26 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 - Behavioural and Spatial Distance
 
+
+
 # Introduction
 
 ## Data
 
-![test](../../neomod_datapool/plots/general_maps/general_map_research_area_unzoomed.jpeg){ height=90% }
+![Radon-B ^14^C dates on graves 2200-800 calBC (Albers Equal Area Conic)](../../neomod_datapool/plots/general_maps/general_map_research_area_unzoomed.jpeg){ height=90% }
 
 ## Data
 
 \begin{adjustwidth}{-3em}{-3em}
   \begin{figure}
     \includegraphics{../../neomod_datapool/plots/general_maps/general_map_research_area_timeslices.jpeg}
-    \caption{test}
+    \caption{Development over time}
   \end{figure}
 \end{adjustwidth}
 
 ## Research Area and Regions
 
-![test](../../neomod_datapool/plots/general_maps/general_map_research_area_regions.jpeg){ height=90% }
+![Artifical Regions: 400km distance, 240km radius, >= 70 dates](../../neomod_datapool/plots/general_maps/general_map_research_area_regions.jpeg){ height=90% }
 
 ## Development
 
@@ -80,13 +82,13 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
   \begin{column}{0.48\textwidth}
     \begin{figure}
       \includegraphics{../../neomod_datapool/plots/development/development_amount_regions_burial_type.jpeg}
-      \caption{test}
+      \caption{\textbf{Burial type} development absolute numbers}
     \end{figure}
   \end{column}
   \begin{column}{0.48\textwidth}
     \begin{figure}
       \includegraphics{../../neomod_datapool/plots/development/development_amount_regions_burial_construction.jpeg}
-      \caption{test}
+      \caption{\textbf{Burial construction} development absolute numbers}
     \end{figure}
   \end{column}
 \end{columns}
@@ -97,54 +99,64 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
   \begin{column}{0.48\textwidth}
     \begin{figure}
       \includegraphics{../../neomod_datapool/plots/development/development_proportions_regions_burial_type.jpeg}
-      \caption{test}
+      \caption{\textbf{Burial type} development proportions}
     \end{figure}
   \end{column}
   \begin{column}{0.48\textwidth}
     \begin{figure}
       \includegraphics{../../neomod_datapool/plots/development/development_proportions_regions_burial_construction.jpeg}
-      \caption{test}
+      \caption{\textbf{Burial construction} development proportions}
     \end{figure}
   \end{column}
 \end{columns}
+
+
 
 # Simulation
 
 ## Concept
 
+
+
 ## Population Graph
 
-![test](figures/population_graph_connection_001.jpeg)
+![Example Population Graph](figures/population_graph_connection_001.jpeg){ height=90% }
 
 ## Algorithm
 
-## Generic Results
 
-![test](../../neomod_datapool/plots/development_simulation/development_proportions_regions_simulation_example.jpeg){ height=90% }
 
 ## Generic Results
 
-![test](../../neomod_datapool/plots/development_simulation/development_proportions_regions_simulation.jpeg){ height=90% }
+![Proportions development of one **simulation** example run ](../../neomod_datapool/plots/development_simulation/development_proportions_regions_simulation_example.jpeg){ height=90% }
 
 ## Generic Results
 
-![test](../../neomod_datapool/plots/development_simulation/development_proportions_regions_simulation_improved_vis.jpeg){ height=90% }
+![Proportions development of many **simulation** runs](../../neomod_datapool/plots/development_simulation/development_proportions_regions_simulation.jpeg){ height=90% }
+
+## Generic Results
+
+![Many **simulation** runs compared to the **real world data**](../../neomod_datapool/plots/development_simulation/development_proportions_regions_simulation_improved_vis.jpeg){ height=90% }
+
+
 
 # Behavioural Distance
 
-## Squared Euclidian Distance
+## Squared Euclidian Distance (SED)
+
+
 
 ## Region Distance Matrix
 
-![test](../../neomod_datapool/plots/sed/regions_regions_squared_euclidian_distance_burial_type.jpeg){ height=90% }
+![Development of **burial type** SED for all regions relations](../../neomod_datapool/plots/sed/regions_regions_squared_euclidian_distance_burial_type.jpeg){ height=90% }
 
 ## Region Distance Matrix
 
-![test](../../neomod_datapool/plots/sed/regions_regions_mean_squared_euclidian_distance_burial_type.jpeg){ height=90% }
+![Mean **burial type** SED for all regions relations](../../neomod_datapool/plots/sed/regions_regions_mean_squared_euclidian_distance_burial_type.jpeg){ height=90% }
 
 ## Region Distance Matrix
 
-![test](../../neomod_datapool/plots/sed/regions_regions_mean_squared_euclidian_distance_burial_construction.jpeg){ height=90% }
+![Mean **burial construction** SED for all regions relations](../../neomod_datapool/plots/sed/regions_regions_mean_squared_euclidian_distance_burial_construction.jpeg){ height=90% }
 
 ## Parallel Developments
 
@@ -152,13 +164,13 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
   \begin{column}{0.48\textwidth}
     \begin{figure}
       \includegraphics{../../neomod_datapool/plots/sed/regions_squared_euclidian_distance_burial_type.jpeg}
-      \caption{test}
+      \caption{Development of \textbf{burial type} SED for each region}
     \end{figure}
   \end{column}
   \begin{column}{0.48\textwidth}
     \begin{figure}
       \includegraphics{../../neomod_datapool/plots/sed/regions_squared_euclidian_distance_burial_construction.jpeg}
-      \caption{test}
+      \caption{Development of \textbf{burial construction} SED for each region}
     \end{figure}
   \end{column}
 \end{columns}
@@ -168,9 +180,11 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 \begin{adjustwidth}{-3em}{-3em}
   \begin{figure}
     \includegraphics{../../neomod_datapool/plots/sed/squared_euclidian_distance_burial_type_vs_burial_construction.jpeg}
-    \caption{test}
+    \caption{Correlation of \textbf{burial type} and \textbf{burial construction} Mean SED over time}
   \end{figure}
 \end{adjustwidth}
+
+
 
 # Behavioural and Spatial Distance
 
