@@ -135,11 +135,20 @@ Ideas are modelled as **entities** that expand competitively in a complex **popu
 
 ## Generic Results
 
-![Proportions development of one **simulation** example run ](../../neomod_datapool/plots/development_simulation/development_proportions_regions_simulation_example.jpeg){ height=90% }
-
-## Generic Results
-
-![Proportions development of many **simulation** runs](../../neomod_datapool/plots/development_simulation/development_proportions_regions_simulation.jpeg){ height=90% }
+\begin{columns}
+  \begin{column}{0.48\textwidth}
+    \begin{figure}
+      \includegraphics{../../neomod_datapool/plots/development_simulation/development_proportions_regions_simulation_example.jpeg}
+      \caption{Proportions development of one \textbf{simulation} example run}
+    \end{figure}
+  \end{column}
+  \begin{column}{0.48\textwidth}
+    \begin{figure}
+      \includegraphics{../../neomod_datapool/plots/development_simulation/development_proportions_regions_simulation.jpeg}
+      \caption{Proportions development of many \textbf{simulation} runs}
+    \end{figure}
+  \end{column}
+\end{columns}
 
 ## Generic Results
 
