@@ -33,6 +33,16 @@ knitr::knit_hooks$set(chunk = function(x, options) {
 knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 ```
 
+## TOC
+
+- Introduction
+
+- Simulation
+
+- Behavioural Distance
+
+- Behavioural and Spatial Distance
+
 # Introduction
 
 ## Data
