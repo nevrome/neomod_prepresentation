@@ -59,12 +59,12 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 ![Artifical Regions: 400km distance, 240km radius, >= 70 dates](../../neomod_datapool/plots/general_maps/general_map_research_area_regions.jpeg){ height=90% }
 
-\begin{textblock*}{65pt}(40pt,170pt)
+\begin{textblock*}{65pt}(40pt,160pt)
   \setlength\fboxrule{2pt}%
   \noindent\fbox{%
     \begin{minipage}{\linewidth - 2\fboxsep - 2\fboxrule}%
-      \small\color{white}
-      heterogeneous information density
+      \raggedright\footnotesize\color{white}
+      heterogeneous information density in space and time
     \end{minipage}}%
 \end{textblock*}
 
@@ -124,6 +124,24 @@ Ideas are modelled as **entities** that expand competitively in a complex **popu
 
 ![Example Population Graph (Fruchterman Reingold)](figures/population_graph_connection_001.jpeg){ height=90% }
 
+\begin{textblock*}{100pt}(50pt,50pt)
+  \setlength\fboxrule{2pt}%
+  \noindent\fbox{%
+    \begin{minipage}{\linewidth - 2\fboxsep - 2\fboxrule}%
+      \footnotesize\raggedright\color{white}
+      every individuals position in social space and time is defined by their connections
+    \end{minipage}}%
+\end{textblock*}
+
+\begin{textblock*}{100pt}(250pt,200pt)
+  \setlength\fboxrule{2pt}%
+  \noindent\fbox{%
+    \begin{minipage}{\linewidth - 2\fboxsep - 2\fboxrule}%
+      \footnotesize\raggedright\color{white}
+      groups have a high degree of internal and a low degree of external interaction
+    \end{minipage}}%
+\end{textblock*}
+
 ## Generic Results
 
 \begin{columns}
@@ -145,7 +163,23 @@ Ideas are modelled as **entities** that expand competitively in a complex **popu
 
 ![Many **simulation** runs compared to the **real world data**](../../neomod_datapool/plots/development_simulation/development_proportions_regions_simulation_improved_vis.jpeg){ height=90% }
 
+\begin{textblock*}{55pt}(300pt,40pt)
+  \setlength\fboxrule{2pt}%
+  \noindent\fbox{%
+    \begin{minipage}{\linewidth - 2\fboxsep - 2\fboxrule}%
+      \raggedright\footnotesize\color{white}
+      the simulation results show the effects of drift and flow 
+    \end{minipage}}%
+\end{textblock*}
 
+\begin{textblock*}{55pt}(10pt,180pt)
+  \setlength\fboxrule{2pt}%
+  \noindent\fbox{%
+    \begin{minipage}{\linewidth - 2\fboxsep - 2\fboxrule}%
+      \raggedright\footnotesize\color{white}
+      real world data and simulation results are comparable 
+    \end{minipage}}%
+\end{textblock*}
 
 # Behavioural Distance
 
@@ -200,7 +234,7 @@ $$d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2$$
   \setlength\fboxrule{2pt}%
   \noindent\fbox{%
     \begin{minipage}{\linewidth - 2\fboxsep - 2\fboxrule}%
-      \small\color{white}
+      \raggedright\footnotesize\color{white}
       Central European Cluster?
     \end{minipage}}%
 \end{textblock*}
@@ -213,7 +247,7 @@ $$d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2$$
   \setlength\fboxrule{2pt}%
   \noindent\fbox{%
     \begin{minipage}{\linewidth - 2\fboxsep - 2\fboxrule}%
-      \small\color{white}
+      \raggedright\footnotesize\color{white}
       Northwestern European Cluster?
     \end{minipage}}%
 \end{textblock*}
