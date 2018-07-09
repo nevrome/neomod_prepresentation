@@ -165,13 +165,58 @@ $$d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2$$
 
 ![Development of **burial type** SED for all regions relations](../../neomod_datapool/plots/sed/regions_regions_squared_euclidian_distance_burial_type.jpeg){ height=90% }
 
+\begin{textblock*}{55pt}(10pt,40pt)
+  \setlength\fboxrule{2pt}%
+  \noindent\fbox{%
+    \begin{minipage}{\linewidth - 2\fboxsep - 2\fboxrule}%
+      \raggedright\footnotesize\color{white}
+      low distance at the start and end due to universal shift from inhumation to cremation
+    \end{minipage}}%
+\end{textblock*}
+
+\begin{textblock*}{55pt}(300pt,100pt)
+  \setlength\fboxrule{2pt}%
+  \noindent\fbox{%
+    \begin{minipage}{\linewidth - 2\fboxsep - 2\fboxrule}%
+      \raggedright\footnotesize\color{white}
+      the gradual change from one tradition to the other in England and Southern Skandinavia evens out the distances
+    \end{minipage}}%
+\end{textblock*}
+
+\begin{textblock*}{55pt}(10pt,180pt)
+  \setlength\fboxrule{2pt}%
+  \noindent\fbox{%
+    \begin{minipage}{\linewidth - 2\fboxsep - 2\fboxrule}%
+      \raggedright\footnotesize\color{white}
+      the different adoption rates are visible as peaks of cultural distance
+    \end{minipage}}%
+\end{textblock*}
+
 ## Region Distance Matrix
 
 ![Mean **burial type** SED for all regions relations](../../neomod_datapool/plots/sed/regions_regions_mean_squared_euclidian_distance_burial_type.jpeg){ height=90% }
 
+\begin{textblock*}{55pt}(10pt,130pt)
+  \setlength\fboxrule{2pt}%
+  \noindent\fbox{%
+    \begin{minipage}{\linewidth - 2\fboxsep - 2\fboxrule}%
+      \small\color{white}
+      Central European Cluster?
+    \end{minipage}}%
+\end{textblock*}
+
 ## Region Distance Matrix
 
 ![Mean **burial construction** SED for all regions relations](../../neomod_datapool/plots/sed/regions_regions_mean_squared_euclidian_distance_burial_construction.jpeg){ height=90% }
+
+\begin{textblock*}{55pt}(300pt,200pt)
+  \setlength\fboxrule{2pt}%
+  \noindent\fbox{%
+    \begin{minipage}{\linewidth - 2\fboxsep - 2\fboxrule}%
+      \small\color{white}
+      Northwestern European Cluster?
+    \end{minipage}}%
+\end{textblock*}
 
 ## Parallel Developments
 
@@ -198,6 +243,15 @@ $$d_{ij}^2 = \sum_{k = 1}^{n} (p_{ik} - p_{jk})^2$$
     \caption{Correlation of \textbf{burial type} and \textbf{burial construction} Mean SED over time}
   \end{figure}
 \end{adjustwidth}
+
+\begin{textblock*}{60pt}(290pt,130pt)
+  \setlength\fboxrule{2pt}%
+  \noindent\fbox{%
+    \begin{minipage}{\linewidth - 2\fboxsep - 2\fboxrule}%
+      \raggedright\footnotesize\color{white}
+      the distances of burial type and construction are not well correlated -- except in the late Early Bronze Age
+    \end{minipage}}%
+\end{textblock*}
 
 
 
