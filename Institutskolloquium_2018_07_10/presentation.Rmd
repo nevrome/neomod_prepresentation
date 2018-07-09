@@ -33,7 +33,7 @@ knitr::knit_hooks$set(chunk = function(x, options) {
 knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 ```
 
-# test
+# Introduction
 
 ## test
 
@@ -71,11 +71,61 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 ## test
 
-![test](../../neomod_datapool/plots/general_maps/general_map_distance_network.jpeg){ height=90% }
+\begin{columns}
+  \begin{column}{0.48\textwidth}
+    \begin{figure}
+      \includegraphics{../../neomod_datapool/plots/development/development_proportions_regions_burial_type.jpeg}
+      \caption{test}
+    \end{figure}
+  \end{column}
+  \begin{column}{0.48\textwidth}
+    \begin{figure}
+      \includegraphics{../../neomod_datapool/plots/development/development_proportions_regions_burial_construction.jpeg}
+      \caption{test}
+    \end{figure}
+  \end{column}
+\end{columns}
+
 
 ## test
 
+![test](../../neomod_datapool/plots/general_maps/general_map_distance_network.jpeg){ height=90% }
 
+# Simulation
 
+## Concept
 
+## Population Graph
+
+![test](figures/population_graph_connection_001.jpeg)
+
+## Algorithm
+
+## Generic Results
+
+![test](../../neomod_datapool/plots/development_simulation/development_proportions_regions_simulation_example.jpeg){ height=90% }
+
+## Generic Results
+
+![test](../../neomod_datapool/plots/development_simulation/development_proportions_regions_simulation.jpeg){ height=90% }
+
+## Generic Results
+
+![test](../../neomod_datapool/plots/development_simulation/development_proportions_regions_simulation_improved_vis.jpeg){ height=90% }
+
+# Spatial and Behavioural Distance
+
+## Squared Euclidian Distance
+
+## Region Distance Matrix
+
+![test](../../neomod_datapool/plots/sed/regions_regions_squared_euclidian_distance_burial_type.jpeg){ height=90% }
+
+## Region Distance Matrix
+
+![test](../../neomod_datapool/plots/sed/regions_regions_mean_squared_euclidian_distance_burial_type.jpeg){ height=90% }
+
+## Region Distance Matrix
+
+![test](../../neomod_datapool/plots/sed/regions_regions_mean_squared_euclidian_distance_burial_construction.jpeg){ height=90% }
 
