@@ -120,7 +120,7 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 ## Population Graph
 
-![Example Population Graph](figures/population_graph_connection_001.jpeg){ height=90% }
+![Example Population Graph (Fruchterman Reingold)](figures/population_graph_connection_001.jpeg){ height=90% }
 
 ## Algorithm
 
@@ -190,14 +190,14 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 ## Spatial Distance Classes
 
-![test](../../neomod_datapool/plots/general_maps/general_map_distance_network.jpeg){ height=90% }
+![Spatial distance network and definition of distance classes](../../neomod_datapool/plots/general_maps/general_map_distance_network.jpeg){ height=90% }
 
 ## Correlation
 
 \begin{adjustwidth}{-3em}{-3em}
   \begin{figure}
     \includegraphics{../../neomod_datapool/plots/sed/squared_euclidian_distance_vs_spatial_distance_burial_type.jpeg}
-    \caption{test}
+    \caption{\textbf{Burial type} correlation of Mean SED and spatial distance}
   \end{figure}
 \end{adjustwidth}
 
@@ -206,12 +206,14 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 \begin{adjustwidth}{-3em}{-3em}
   \begin{figure}
     \includegraphics{../../neomod_datapool/plots/sed/squared_euclidian_distance_vs_spatial_distance_burial_construction.jpeg}
-    \caption{test}
+    \caption{\textbf{Burial construction} correlation of Mean SED and spatial distance}
   \end{figure}
 \end{adjustwidth}
 
 ## Correlation
 
-![test](../../neomod_datapool/plots/sed_simulation/mantel_test_many_simulations.jpeg){ height=90% }
+![Correlation coefficient over time for 50 **simulation** runs and the **real world data**](../../neomod_datapool/plots/sed_simulation/mantel_test_many_simulations.jpeg){ height=90% }
 
 ## Preliminary Conclusion
+
+
