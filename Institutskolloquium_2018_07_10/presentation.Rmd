@@ -108,17 +108,19 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 
 ## Concept
 
-- **Cultural Evolution theory:** The processes of natural development of species through evolution are also relevant for human cultural development.
-
 - Funeral rituals are **behaviour/ideas/cultural traits** and spread in space and time. They life in **social space** and their spread depends on social relationships.
 
 - Funeral rituals are a special category of ideas: They have a relatively low interaction with the human-environment system and can be treated as **selectively neutral**.
 
 - The main mechanisms of diffusion of neutral variants are **innovation**, **drift** and **flow**.
 
+**Drift:** Dominanz of individual traits due to stochastic processes
+
+**Flow:** Information transfer and synchronization across group boundaries
+
 \noindent\rule{\textwidth}{1pt}
 
-Ideas are modelled as **entities** that expand competitively in a complex **population graph**. 
+Concept: Ideas are **entities** that expand competitively in a **population graph**. 
 
 ## Population Graph
 
