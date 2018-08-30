@@ -4,10 +4,22 @@ output: pdf_document
 author: Clemens Schmid
 ---
 
-## C14 data to variable development proxy
+## Cultural Transmission in European Bronze Age Burial traditions
 
-## Cultural distance, spatial distance and causation
+### C14 data to variable development proxy
 
-## Comparison with population graph based expansion simulation 
+### Cultural distance, spatial distance and causation
+
+### Comparison with population graph based expansion simulation 
+
+***
+
+## A Population Graph based Style Transmission model
+
+### Principles of Neiman-Like models
+
+### Population graph creation
+
+### Idea expansion of Population graphs
 
 
