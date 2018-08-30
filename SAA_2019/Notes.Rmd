@@ -1,0 +1,13 @@
+---
+title: "SAA"
+output: pdf_document
+author: Clemens Schmid
+---
+
+## C14 data to variable development proxy
+
+## Cultural distance, spatial distance and causation
+
+## Comparison with population graph based expansion simulation 
+
+
