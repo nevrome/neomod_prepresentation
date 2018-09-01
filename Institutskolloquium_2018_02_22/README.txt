@@ -1,1 +1,0 @@
-The figures necessary to render this presentation are not available anymore. Careful!
