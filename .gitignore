@@ -33,10 +33,6 @@ vignettes/*.pdf
 *.knit.md
 .Rproj.user
 
-# rendered documents
-*.html
-*.pdf
-
 # javascript resources
 BART_2018_06_05/network_figures/network_files/htmlwidgets-1.2/htmlwidgets.js
 
