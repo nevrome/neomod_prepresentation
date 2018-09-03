@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="" />
+  <title>presentation.utf8</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="presentation_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="presentation_files/reveal.js-3.3.0.1/css/theme/simple.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <link rel="stylesheet" href="metropolis.css"/>
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="presentation-bronze-age-round-table" class="slide level2">
+<h2>Presentation Bronze Age Round Table</h2>
+<p><font size="6"><strong>A computational Cultural Transmission model of Bronze Age burial rites in Central, Northern and North-western Europe</strong></font></p>
+<p>Clemens Schmid – 05. Juni 2018</p>
+<figure>
+<img src="figures/devils_jump.jpg">
+<figcaption>
+© Michael Codd – Devil’s Jumps, Treyford, West Sussex, Barrow Cemetery – West Sussex County Council, www.artuk.org [03.06.18]
+</figcaption>
+</figure>
+</section>
+<section id="presentation-bronze-age-round-table-1" class="slide level2">
+<h2>Presentation Bronze Age Round Table</h2>
+<p><font size="6"><strong>A computational Cultural Transmission model of Bronze Age burial rites in Central, Northern and North-western Europe</strong></font></p>
+<p>Clemens Schmid – 05. Juni 2018</p>
+<p><br />
+</p>
+<ul>
+<li><strong>Context: Burial rites in Central Europe</strong></li>
+<li><strong>Data</strong>
+<ul>
+<li>Overview: Radon-B</li>
+<li>Accuracy check in Southern Germany (Falkenstein 2017)</li>
+</ul></li>
+<li><strong>Theory</strong>
+<ul>
+<li>Cultural Evolution</li>
+<li>Transmission of Neutral Variants (Dunnell 1978 + Neiman 1995)</li>
+</ul></li>
+<li><strong>Model &amp; Simulation</strong>
+<ul>
+<li>Population generation</li>
+<li>Expansion algorithm</li>
+<li>First simulation runs: Proof of concept</li>
+</ul></li>
+</ul>
+<p>⚠ work in progress ⚠</p>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<p><br />
+<br />
+<br />
+</p>
+<p><font size="20"><strong>Context</strong></font></p>
+<hr>
+</section>
+<section id="burial-customs-of-the-european-bronze-age" class="slide level2">
+<h2>Burial customs of the European Bronze Age</h2>
+<ul>
+<li>Graves and cemeteries are an essential category of Bronze Age research</li>
+</ul>
+<p><br />
+</p>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li>spatial and temporal <strong>heterogeneity of phenomena</strong>
+<ul>
+<li>Grave position and association (subsequent use of Neolithic megalithics, cemeteries, etc.)</li>
+<li>Grave construction (coffins, houses of the dead, boat graves, etc.)</li>
+<li>Selection of burial objects</li>
+<li>Placement of the corpse</li>
+<li>…</li>
+</ul></li>
+</ul>
+</div>
+<p><br />
+</p>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><strong>Main dimensions</strong>
+<ul>
+<li>Inhumation vs. Cremation</li>
+<li>Flat grave vs. Burial mound</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="classical-narrative-of-the-development-of-bronze-age-burial-customs" class="slide level2">
+<h2>Classical narrative of the development of Bronze Age burial customs</h2>
+<div class="fragment" data-fragment-index="1">
+<p><strong>Early and Middle Bronze Age</strong></p>
+<ul>
+<li>Inhumations (in different variations)</li>
+<li>Cremation graves initially dominate only in the Hungarian Plain</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li>Burial mounds in Eastern, Western and Northern Europe</li>
+<li>Flat graves in Central and Southern Europe, mounds are slowly gaining importance</li>
+</ul>
+</div>
+<p><br />
+</p>
+<div class="fragment" data-fragment-index="3">
+<p><strong>Late Bronze Age</strong></p>
+<ul>
+<li>cremation is (almost) everywhere: Urnfield Period</li>
+</ul>
+</div>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<p><br />
+<br />
+<br />
+</p>
+<p><font size="20"><strong>Data</strong></font></p>
+<hr>
+</section>
+<section id="quantitative-recording-of-phenomena-radon-b" class="slide level2">
+<h2>Quantitative recording of phenomena: RADON-B</h2>
+<figure>
+<img src="figures/radonb.jpg" alt="radon-b" align="middle">
+</figure>
+<div class="fragment" data-fragment-index="1">
+<p><sup>14</sup>C dates with context information</p>
+<ul>
+<li><strong>2336</strong> Dates from graves between 2200 and 800 calBC</li>
+<li>Metainformation
+<ul>
+<li><strong>1465</strong> dates from this with an entry for the dimension<br />
+Inhumation/Cremation (935/530)</li>
+<li><strong>915</strong> dates from this with an entry for the dimension<br />
+Flat grave/Burial mound (459/456)</li>
+<li><strong>753</strong> dates with specifications for both contexts</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="radon-b-date-distribution" class="slide level2">
+<h2>RADON-B date distribution</h2>
+<figure>
+<img src="figures/general_map.jpeg">
+</figure>
+<p>All <sup>14</sup>C-dates from graves 2200-800calBC</p>
+</section>
+<section id="research-area" class="slide level2">
+<h2>Research area</h2>
+<figure>
+<img src="figures/general_map_research_area_unzoomed.jpeg">
+</figure>
+<p>Rectangle in Europe Albers Equal Area Conic (EPSG: 102013)</p>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<section data-background-video="figures/the_movie_4.mp4" data-background-color="#f1f1f1">
+</section>
+</section>
+<section id="diachronic-perspective" class="slide level2">
+<h2>Diachronic perspective</h2>
+<figure>
+<img src="figures/general_map_research_area_timeslices.jpeg">
+</figure>
+<p>Timeslices of 200 years in between 2200-800calBC</p>
+</section>
+<section id="artificial-comparison-regions-based-on-a-regular-grid" class="slide level2">
+<h2>Artificial comparison regions based on a regular grid</h2>
+<figure>
+<img src="figures/general_map_research_area_regions.jpeg">
+</figure>
+<p>Point distance: 400km, Circle radius: 240km, only circles with &gt;= 70</p>
+</section>
+<section id="spatio-temporal-development-amount-of-graves" class="slide level2">
+<h2>Spatio-temporal development (amount of graves)</h2>
+<div id="left">
+<figure>
+<img src="figures/development_amount_regions_burial_type.jpeg">
+</figure>
+</div>
+<div id="right">
+<figure>
+<img src="figures/development_amount_regions_burial_construction.jpeg">
+</figure>
+</div>
+<p>Grave counted as present if year within <sup>14</sup>C 2σ range</p>
+</section>
+<section id="spatio-temporal-development-proportion-of-ideas" class="slide level2">
+<h2>Spatio-temporal development (proportion of ideas)</h2>
+<div id="left">
+<figure>
+<img src="figures/development_proportions_regions_burial_type.jpeg">
+</figure>
+</div>
+<div id="right">
+<figure>
+<img src="figures/development_proportions_regions_burial_construction.jpeg">
+</figure>
+</div>
+<p>The category “unknown” was ignored for the proportion calculation</p>
+</section>
+<section id="closer-look-southwestern-germany" class="slide level2">
+<h2>Closer look: Southwestern Germany</h2>
+<figure>
+<img src="figures/falkenstein_burial_type.png">
+</figure>
+<p>Falkenstein, F. (2017). Zum Wandel der Bestattungssitten von der Hügelgräber- zur Urnenfelderkultur in Süddeutschland. In D. Brandherm &amp; B. Nessel (Eds.), Phasenübergänge und Umbrüche im bronzezeitlichen Europa (pp. 77–96). Bonn.</p>
+</section>
+<section id="closer-look-southwestern-germany-1" class="slide level2">
+<h2>Closer look: Southwestern Germany</h2>
+<figure>
+<img src="figures/falkenstein_burial_construction.png">
+</figure>
+<p>Falkenstein, F. (2017). Zum Wandel der Bestattungssitten von der Hügelgräber- zur Urnenfelderkultur in Süddeutschland. In D. Brandherm &amp; B. Nessel (Eds.), Phasenübergänge und Umbrüche im bronzezeitlichen Europa (pp. 77–96). Bonn.</p>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<p><br />
+<br />
+<br />
+</p>
+<p><font size="20"><strong>Theory</strong></font></p>
+<hr>
+</section>
+<section id="theoretical-basis-evolutionary-archaeology" class="slide level2">
+<h2>Theoretical basis: Evolutionary Archaeology</h2>
+<p><strong>Cultural Evolution theory</strong>: The processes of natural development of species through evolution also affect human cultural development.</p>
+<p><br />
+</p>
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li><strong>Evolutionism</strong> (and Social Darwinism) – Cultural Relativism – <strong>Neoevolutionism</strong> &amp; Multilineal evolution</li>
+</ul>
+</div>
+<p><br />
+</p>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li>New Perspectives from the 1970s:
+<ul>
+<li><strong>Evolutionary psychology</strong></li>
+<li><strong>Human behavioural ecology</strong></li>
+<li><strong>Dual inheritance theory</strong>: Culture forms a second, much more dynamic hereditary system that leaves genetically determined behaviour behind.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="burial-rites-as-neutral-variants" class="slide level2">
+<h2>Burial rites as Neutral Variants</h2>
+<ul>
+<li>Funeral rituals are <strong>behaviour/ideas/cultural traits/memes</strong> and spread in space and time. They life in <strong>social space</strong> and their spread depends on social relationships.</li>
+</ul>
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li>Funeral rituals are a <strong>special category</strong> of ideas: They have a <strong>relatively low interaction</strong> with the <strong>human-environment system</strong> and can be treated as <strong>selectively neutral</strong>.</li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p>Dunnell, R. C. (1978). Style and Function: A Fundamental Dichotomy. American Antiquity, 43(2), 192–202. <a href="https://doi.org/10.2307/279244" class="uri">https://doi.org/10.2307/279244</a></p>
+<p><em><strong>Style</strong> denotes those forms that do not have detectable selective values. <strong>Function</strong> is manifest as those forms that directly affect the Darwinian fitness of the populations in which they occur.</em></p>
+</div>
+<div class="fragment" data-fragment-index="3">
+<p><em>Traits that have discrete selective values over measurable amounts of time should be accountable by natural selection and a set of external conditions. <strong>Traits identified as adaptively neutral will display a very different kind of behavior</strong> because their frequencies in a population are not directly accountable in terms of selection and external contingencies. Their behavior should be more adequately accommodated by <strong>stochastic processes</strong></em></p>
+</div>
+</section>
+<section id="simulating-transmission-of-neutral-variants" class="slide level2">
+<h2>Simulating Transmission of Neutral Variants</h2>
+<ul>
+<li>The main mechanisms of diffusion of neutral variants are <strong>drift</strong> and <strong>flow</strong>.</li>
+</ul>
+<div class="fragment" data-fragment-index="1">
+<p>A <strong>simple simulation</strong> to illustrate these processes:</p>
+<p>Neiman, F. D. (1995). Stylistic Variation in Evolutionary Perspective: Inferences from Decorative Diversity and Interassemblage Distance in Illinois Woodland Ceramic Assemblages. American Antiquity, 60(1), 7–36. <a href="https://doi.org/10.2307/282074" class="uri">https://doi.org/10.2307/282074</a></p>
+<p><a href="https://nevrome.shinyapps.io/neiman1995/" class="uri">https://nevrome.shinyapps.io/neiman1995/</a></p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p><strong>Ingredients:</strong></p>
+<ul>
+<li>A population of individuals with size <span class="math inline">\(N\)</span></li>
+<li><span class="math inline">\(k\)</span> different neutral variants in this population</li>
+<li>In each time step every individual randomly adopts a variant from somebody else.</li>
+</ul>
+</div>
+</section>
+<section id="temporal-dynamics-of-drift" class="slide level2">
+<h2>Temporal dynamics of drift</h2>
+<iframe src="http://127.0.0.1:3539" style="width: 8000px; height: 650px">
+</iframe>
+<ul>
+<li><span class="math inline">\(k\)</span>: Amount of variants in a population</li>
+<li><span class="math inline">\(N_e\)</span>: Size of the effective population</li>
+<li><span class="math inline">\(t\)</span>: Time / number of iterations</li>
+<li>(<span class="math inline">\(μ\)</span>: Innovation rate. Probability of the creation of a new variant)</li>
+</ul>
+</section>
+<section id="temporal-dynamics-of-drift-and-flow" class="slide level2">
+<h2>Temporal dynamics of drift and flow</h2>
+<iframe src="http://127.0.0.1:3541" style="width: 8000px; height: 650px">
+</iframe>
+<ul>
+<li><span class="math inline">\(k\)</span>: Amount of variants in a population</li>
+<li><span class="math inline">\(N_e\)</span>: Size of the effective population</li>
+<li><span class="math inline">\(t\)</span>: Time / number of iterations</li>
+<li><span class="math inline">\(m_i\)</span>: Intergroup transmission rate</li>
+<li><span class="math inline">\(d_{ij}^2\)</span>: Squared Euclidean distance</li>
+</ul>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<p><br />
+<br />
+<br />
+</p>
+<p><font size="20"><strong>Model &amp; Simulation</strong></font></p>
+<hr>
+</section>
+<section id="idea" class="slide level2">
+<h2>Idea</h2>
+<p>If there’s a relation of <strong>population size</strong>, <strong>intergroup interaction</strong> and <strong>intergroup homogeneity</strong>, is it possible to get better insights into population level parameters with a transmission model that describes population in more sophisticated terms?</p>
+<div class="fragment" data-fragment-index="1">
+<p>⇒ Implementation of a <strong>computer model</strong> in R and C++ to simulate the <strong>transmission</strong> of a <strong>special idea category</strong> in comparison to <strong>archaeological data</strong>.</p>
+<p><strong>Ingredients:</strong></p>
+<ul>
+<li>Diachronic <strong>population graph</strong>
+<ul>
+<li>Individuals</li>
+<li>Relations</li>
+</ul></li>
+<li>Entities: <strong>Ideas</strong> (<em>the meme’s eye view</em>)</li>
+<li>Behaviour: <strong>Reproduction</strong> through expansion</li>
+</ul>
+</div>
+</section>
+<section id="population-graph-concept" class="slide level2">
+<h2>Population graph – Concept</h2>
+<figure>
+<img src="network_figures/01.png">
+</figure>
+<p>Population graph, no connection</p>
+</section>
+<section id="population-graph-concept-1" class="slide level2">
+<h2>Population graph – Concept</h2>
+<figure>
+<img src="network_figures/02.png">
+</figure>
+<p>Population graph, couples (special horizontal relationship)</p>
+</section>
+<section id="population-graph-concept-2" class="slide level2">
+<h2>Population graph – Concept</h2>
+<figure>
+<img src="network_figures/03.png">
+</figure>
+<p>Population graph, vertical relations</p>
+</section>
+<section id="population-graph-concept-3" class="slide level2">
+<h2>Population graph – Concept</h2>
+<figure>
+<img src="network_figures/04.png">
+</figure>
+<p>Population graph, horizontal and oblique relations</p>
+</section>
+<section id="population-graph-actual-implementation" class="slide level2">
+<h2>Population graph – Actual implementation</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># create models_grid data.frame</span></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2">models_grid &lt;-<span class="st"> </span><span class="kw">expand.grid</span>(</a>
+<a class="sourceLine" id="cb1-3" data-line-number="3">  <span class="co"># general settings</span></a>
+<a class="sourceLine" id="cb1-4" data-line-number="4">  <span class="dt">timeframe =</span> <span class="kw">list</span>(</a>
+<a class="sourceLine" id="cb1-5" data-line-number="5">    <span class="dv">0</span><span class="op">:</span><span class="dv">1400</span></a>
+<a class="sourceLine" id="cb1-6" data-line-number="6">  ),</a>
+<a class="sourceLine" id="cb1-7" data-line-number="7">  <span class="co"># population settings  </span></a>
+<a class="sourceLine" id="cb1-8" data-line-number="8">  <span class="dt">population_size_functions =</span> <span class="kw">c</span>(</a>
+<a class="sourceLine" id="cb1-9" data-line-number="9">    <span class="cf">function</span>(t) {<span class="dv">40</span>}</a>
+<a class="sourceLine" id="cb1-10" data-line-number="10">    <span class="co"># function(t) {round(0.0002 * (t - 700)^2 + 10, 0)}</span></a>
+<a class="sourceLine" id="cb1-11" data-line-number="11">  ),</a>
+<a class="sourceLine" id="cb1-12" data-line-number="12">  <span class="dt">units_amount =</span> <span class="kw">c</span>(</a>
+<a class="sourceLine" id="cb1-13" data-line-number="13">    <span class="dv">8</span></a>
+<a class="sourceLine" id="cb1-14" data-line-number="14">  ),</a>
+<a class="sourceLine" id="cb1-15" data-line-number="15">  <span class="dt">age_distribution_functions =</span> <span class="kw">c</span>(</a>
+<a class="sourceLine" id="cb1-16" data-line-number="16">    <span class="cf">function</span>(x) {<span class="dv">1</span> <span class="op">/</span><span class="st"> </span>(<span class="dv">1</span> <span class="op">+</span><span class="st"> </span><span class="fl">0.0004</span> <span class="op">*</span><span class="st"> </span><span class="fl">0.7</span><span class="op">^</span>(<span class="op">-</span><span class="dv">7</span><span class="op">*</span><span class="kw">log</span>(x)))}</a>
+<a class="sourceLine" id="cb1-17" data-line-number="17">  ),</a>
+<a class="sourceLine" id="cb1-18" data-line-number="18">  <span class="dt">age_ranges =</span> <span class="kw">list</span>(</a>
+<a class="sourceLine" id="cb1-19" data-line-number="19">    <span class="dv">1</span><span class="op">:</span><span class="dv">100</span></a>
+<a class="sourceLine" id="cb1-20" data-line-number="20">  ),</a>
+<a class="sourceLine" id="cb1-21" data-line-number="21">  <span class="co"># relations settings</span></a>
+<a class="sourceLine" id="cb1-22" data-line-number="22">  <span class="dt">amounts_friends =</span> <span class="kw">list</span>(</a>
+<a class="sourceLine" id="cb1-23" data-line-number="23">    <span class="dv">20</span></a>
+<a class="sourceLine" id="cb1-24" data-line-number="24">  ),</a>
+<a class="sourceLine" id="cb1-25" data-line-number="25">  <span class="dt">unit_interaction_matrix =</span> <span class="kw">list</span>(</a>
+<a class="sourceLine" id="cb1-26" data-line-number="26">    <span class="kw">t</span>(<span class="kw">matrix</span>(</a>
+<a class="sourceLine" id="cb1-27" data-line-number="27">      <span class="kw">c</span>(</a>
+<a class="sourceLine" id="cb1-28" data-line-number="28">        <span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,</a>
+<a class="sourceLine" id="cb1-29" data-line-number="29">        <span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,</a>
+<a class="sourceLine" id="cb1-30" data-line-number="30">        <span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,</a>
+<a class="sourceLine" id="cb1-31" data-line-number="31">        <span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,</a>
+<a class="sourceLine" id="cb1-32" data-line-number="32">        <span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,</a>
+<a class="sourceLine" id="cb1-33" data-line-number="33">        <span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">1</span>,</a>
+<a class="sourceLine" id="cb1-34" data-line-number="34">        <span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">1</span>,</a>
+<a class="sourceLine" id="cb1-35" data-line-number="35">        <span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-36" data-line-number="36">      ),</a>
+<a class="sourceLine" id="cb1-37" data-line-number="37">      <span class="dv">8</span>, <span class="dv">8</span></a>
+<a class="sourceLine" id="cb1-38" data-line-number="38">    ))</a>
+<a class="sourceLine" id="cb1-39" data-line-number="39">  ),</a>
+<a class="sourceLine" id="cb1-40" data-line-number="40">  <span class="dt">cross_unit_proportion_child_of =</span> <span class="kw">list</span>(</a>
+<a class="sourceLine" id="cb1-41" data-line-number="41">    <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-42" data-line-number="42">  ),</a>
+<a class="sourceLine" id="cb1-43" data-line-number="43">  <span class="dt">cross_unit_proportion_friend =</span> <span class="kw">list</span>(</a>
+<a class="sourceLine" id="cb1-44" data-line-number="44">    <span class="dv">0</span>,</a>
+<a class="sourceLine" id="cb1-45" data-line-number="45">    <span class="fl">0.01</span>,</a>
+<a class="sourceLine" id="cb1-46" data-line-number="46">    <span class="fl">0.10</span></a>
+<a class="sourceLine" id="cb1-47" data-line-number="47">  ),</a>
+<a class="sourceLine" id="cb1-48" data-line-number="48">  <span class="dt">weight_child_of =</span> <span class="kw">list</span>(</a>
+<a class="sourceLine" id="cb1-49" data-line-number="49">    <span class="dv">5</span></a>
+<a class="sourceLine" id="cb1-50" data-line-number="50">  ),</a>
+<a class="sourceLine" id="cb1-51" data-line-number="51">  <span class="dt">weight_friend =</span> <span class="kw">list</span>(</a>
+<a class="sourceLine" id="cb1-52" data-line-number="52">    <span class="dv">3</span></a>
+<a class="sourceLine" id="cb1-53" data-line-number="53">  ),</a>
+<a class="sourceLine" id="cb1-54" data-line-number="54">  <span class="co"># ideas settings</span></a>
+<a class="sourceLine" id="cb1-55" data-line-number="55">  <span class="dt">names =</span> <span class="kw">list</span>(</a>
+<a class="sourceLine" id="cb1-56" data-line-number="56">    <span class="kw">c</span>(<span class="st">&quot;idea_1&quot;</span>, <span class="st">&quot;idea_2&quot;</span>)</a>
+<a class="sourceLine" id="cb1-57" data-line-number="57">  ),</a>
+<a class="sourceLine" id="cb1-58" data-line-number="58">  <span class="dt">start_distribution =</span> <span class="kw">list</span>(</a>
+<a class="sourceLine" id="cb1-59" data-line-number="59">    start_proportion_burial_type</a>
+<a class="sourceLine" id="cb1-60" data-line-number="60">  ), </a>
+<a class="sourceLine" id="cb1-61" data-line-number="61">  <span class="dt">strength =</span> <span class="kw">list</span>(</a>
+<a class="sourceLine" id="cb1-62" data-line-number="62">    <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">1</span>) </a>
+<a class="sourceLine" id="cb1-63" data-line-number="63">  )</a>
+<a class="sourceLine" id="cb1-64" data-line-number="64">) <span class="op">%&gt;%</span><span class="st"> </span>tibble<span class="op">::</span><span class="kw">as.tibble</span>() <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb1-65" data-line-number="65"><span class="st">  </span>dplyr<span class="op">::</span><span class="kw">mutate</span>(</a>
+<a class="sourceLine" id="cb1-66" data-line-number="66">    <span class="dt">multiplier =</span> <span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(.)</a>
+<a class="sourceLine" id="cb1-67" data-line-number="67">  ) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb1-68" data-line-number="68"><span class="st">  </span>tidyr<span class="op">::</span><span class="kw">uncount</span>(<span class="dv">1</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb1-69" data-line-number="69"><span class="st">  </span>dplyr<span class="op">::</span><span class="kw">mutate</span>(</a>
+<a class="sourceLine" id="cb1-70" data-line-number="70">    <span class="dt">model_id =</span> <span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(.)</a>
+<a class="sourceLine" id="cb1-71" data-line-number="71">  )</a></code></pre></div>
+</section>
+<section id="population-graph-actual-implementation-1" class="slide level2">
+<h2>Population graph – Actual implementation</h2>
+<figure>
+<img src="figures/population_graph_connection_0.jpeg">
+</figure>
+<p>Fruchterman Reingold, Cross unit horizontal contact proportion: 0</p>
+</section>
+<section id="population-graph-actual-implementation-2" class="slide level2">
+<h2>Population graph – Actual implementation</h2>
+<figure>
+<img src="figures/population_graph_connection_001.jpeg">
+</figure>
+<p>Cross unit horizontal contact proportion: 0.01</p>
+</section>
+<section id="population-graph-actual-implementation-3" class="slide level2">
+<h2>Population graph – Actual implementation</h2>
+<figure>
+<img src="figures/population_graph_connection_01.jpeg">
+</figure>
+<p>Cross unit horizontal contact proportion: 0.1</p>
+</section>
+<section id="idea-behaviour-concept" class="slide level2">
+<h2>Idea behaviour – Concept</h2>
+<figure>
+<img src="network_figures/05.png">
+</figure>
+<p>Idea expansion step: 0 (initial setup)</p>
+</section>
+<section id="idea-behaviour-concept-1" class="slide level2">
+<h2>Idea behaviour – Concept</h2>
+<figure>
+<img src="network_figures/06.png">
+</figure>
+<p>Idea expansion step: 1 (first expansion)</p>
+</section>
+<section id="idea-behaviour-concept-2" class="slide level2">
+<h2>Idea behaviour – Concept</h2>
+<figure>
+<img src="network_figures/07.png">
+</figure>
+<p>Idea expansion step: 2 (very first nodes die)</p>
+</section>
+<section id="idea-behaviour-concept-3" class="slide level2">
+<h2>Idea behaviour – Concept</h2>
+<figure>
+<img src="network_figures/08.png">
+</figure>
+<p>Idea expansion step: 3</p>
+</section>
+<section id="idea-behaviour-concept-4" class="slide level2">
+<h2>Idea behaviour – Concept</h2>
+<figure>
+<img src="network_figures/09.png">
+</figure>
+<p>Idea expansion step: 4</p>
+</section>
+<section id="idea-behaviour-concept-5" class="slide level2">
+<h2>Idea behaviour – Concept</h2>
+<figure>
+<img src="network_figures/10.png">
+</figure>
+<p>Idea expansion step: 5 (scorched earth)</p>
+</section>
+<section id="idea-behaviour-actual-implementation" class="slide level2">
+<h2>Idea behaviour – Actual implementation</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="dt">void</span> Idea::expand() {</a>
+<a class="sourceLine" id="cb2-2" data-line-number="2">  </a>
+<a class="sourceLine" id="cb2-3" data-line-number="3">  <span class="co">// get all neighboring nodes</span></a>
+<a class="sourceLine" id="cb2-4" data-line-number="4">  <span class="bu">std::</span>vector&lt;<span class="dt">int</span>&gt; all_neighbors = <span class="kw">this</span>-&gt;get_all_neighboring_nodes();</a>
+<a class="sourceLine" id="cb2-5" data-line-number="5">  <span class="co">// remove duplicates from neighbors</span></a>
+<a class="sourceLine" id="cb2-6" data-line-number="6">  <span class="bu">std::</span>vector&lt;<span class="dt">int</span>&gt; neighbors_without_doubles = remove_duplicates(all_neighbors);</a>
+<a class="sourceLine" id="cb2-7" data-line-number="7">  <span class="co">// remove the current nodes from neighbors</span></a>
+<a class="sourceLine" id="cb2-8" data-line-number="8">  <span class="bu">std::</span>vector&lt;<span class="dt">int</span>&gt; neighbors = erase_elements_of_second_vector_from_the_first(</a>
+<a class="sourceLine" id="cb2-9" data-line-number="9">    neighbors_without_doubles, <span class="kw">this</span>-&gt;current_nodes</a>
+<a class="sourceLine" id="cb2-10" data-line-number="10">  );</a>
+<a class="sourceLine" id="cb2-11" data-line-number="11">  </a>
+<a class="sourceLine" id="cb2-12" data-line-number="12">  <span class="co">// make decision: which neighbors can be converted</span></a>
+<a class="sourceLine" id="cb2-13" data-line-number="13">  <span class="bu">std::</span>vector&lt;<span class="dt">int</span>&gt; converted = <span class="kw">this</span>-&gt;select_nodes_to_convert(neighbors);</a>
+<a class="sourceLine" id="cb2-14" data-line-number="14">  </a>
+<a class="sourceLine" id="cb2-15" data-line-number="15">  <span class="co">// delete current nodes from graph</span></a>
+<a class="sourceLine" id="cb2-16" data-line-number="16">  <span class="cf">for</span> (<span class="kw">auto</span>&amp; i : <span class="kw">this</span>-&gt;current_nodes) {</a>
+<a class="sourceLine" id="cb2-17" data-line-number="17">    <span class="cf">if</span>(<span class="kw">this</span>-&gt;realworld-&gt;does_node_exist(i)) {</a>
+<a class="sourceLine" id="cb2-18" data-line-number="18">      <span class="kw">this</span>-&gt;realworld-&gt;delete_nodes(i);</a>
+<a class="sourceLine" id="cb2-19" data-line-number="19">      <span class="kw">this</span>-&gt;dead_nodes.push_back(i);</a>
+<a class="sourceLine" id="cb2-20" data-line-number="20">    }</a>
+<a class="sourceLine" id="cb2-21" data-line-number="21">  }</a>
+<a class="sourceLine" id="cb2-22" data-line-number="22">  </a>
+<a class="sourceLine" id="cb2-23" data-line-number="23">  <span class="co">// forget current nodes and make neighbors new current nodes</span></a>
+<a class="sourceLine" id="cb2-24" data-line-number="24">  <span class="kw">this</span>-&gt;current_nodes.clear();</a>
+<a class="sourceLine" id="cb2-25" data-line-number="25">  <span class="kw">this</span>-&gt;current_nodes.insert(</a>
+<a class="sourceLine" id="cb2-26" data-line-number="26">    <span class="kw">this</span>-&gt;current_nodes.end(), converted.begin(), converted.end()</a>
+<a class="sourceLine" id="cb2-27" data-line-number="27">  );</a>
+<a class="sourceLine" id="cb2-28" data-line-number="28">  </a>
+<a class="sourceLine" id="cb2-29" data-line-number="29">}</a></code></pre></div>
+</section>
+<section id="very-first-results-proof-of-concept" class="slide level2">
+<h2>Very first results – Proof of concept</h2>
+<figure>
+<img src="figures/development_proportions_regions_simulation_example_0.jpeg">
+</figure>
+<p>Cross unit horizontal contact proportion: 0</p>
+</section>
+<section id="very-first-results-proof-of-concept-1" class="slide level2">
+<h2>Very first results – Proof of concept</h2>
+<figure>
+<img src="figures/development_proportions_regions_simulation_example_001.jpeg">
+</figure>
+<p>Cross unit horizontal contact proportion: 0.01</p>
+</section>
+<section id="very-first-results-proof-of-concept-2" class="slide level2">
+<h2>Very first results – Proof of concept</h2>
+<figure>
+<img src="figures/development_proportions_regions_simulation_example_01.jpeg">
+</figure>
+<p>Cross unit horizontal contact proportion: 0.1</p>
+</section>
+<section id="very-first-results-proof-of-concept-3" class="slide level2">
+<h2>Very first results – Proof of concept</h2>
+<figure>
+<img src="figures/0_001_01.png">
+</figure>
+<p>90 simulation runs separated by region and cross unit contact</p>
+</section>
+<section id="very-first-results-proof-of-concept-4" class="slide level2">
+<h2>Very first results – Proof of concept</h2>
+<figure>
+<img src="figures/0_001_01_2.png">
+</figure>
+<p>Mean regional standard deviation separated by cross unit contact</p>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<p><br />
+<br />
+<br />
+</p>
+<p><font size="20"><strong>ToDo</strong></font></p>
+<hr>
+</section>
+<section id="most-important-things-to-do-now" class="slide level2">
+<h2>Most important things to do now:</h2>
+<ul>
+<li>Simulation
+<ul>
+<li>Development of better methods and visualizations for simulation result comparison</li>
+<li>Systematic exploration of the model parameters and their consequences</li>
+</ul></li>
+</ul>
+<div class="fragment" data-fragment-index="1">
+<ul>
+<li>Theory
+<ul>
+<li>Analysis of the special characteristics of death related cultural traits</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment" data-fragment-index="2">
+<ul>
+<li>Real world data
+<ul>
+<li>Intergroup time series comparison to establish an inductive measurand for intergroup connectedness</li>
+<li>Brief but systematic estimation of sample representativeness</li>
+</ul></li>
+</ul>
+</div>
+</section>
+    </div>
+  </div>
+
+  <script src="presentation_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="presentation_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display the page number of the current slide
+        slideNumber: true,
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: true,
+        // Opens links in an iframe preview overlay
+        previewLinks: true,
+        // Transition style
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'none', // none/fade/slide/convex/concave/zoom
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1000,
+        height: 600,
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 1,
+        maxScale: 1,
+
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
