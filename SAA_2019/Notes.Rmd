@@ -6,17 +6,11 @@ author: Clemens Schmid
 
 ## A Population Graph based Style Transmission model
 
-### Principles of Neiman-Like models
-
-### Population graph creation
-
-### Idea expansion of Population graphs
-
 The now classic Neiman (1995) is a baseline model of many influential applications of Cultural Transmission to explore Stylistic Variability in archaeology. Its and many of its successors' representation of social interaction and generational development are minimalistic though, purposely simplified to allow parameter exploration and algebraic analysis. While justified, this omits both the already by Cavalli-Sforza and Feldman (1981) compiled theoretical trajectories of information transmission as well as the insights archaeologists gain through social network analysis.  
 
-This paper explores an alternative, agent-based simulation framework that attempts to be more flexible: a diachronic population graph is established as landscape where ideas as entities with individual agency seek expansion -- the meme's eye view. The social network can be constructed to represent archaeological knowledge concerning population size development, the degree of intra- and intergroup exchange or spatial or cultural interaction patterns. Ideas may be long term static or evolving over time, selectively neutral or functionally different, distributed randomly or according to real world examples. 
+This paper explores an alternative, agent-based simulation framework that attempts to be more flexible: a diachronic population graph is established as landscape, where ideas as entities with individual agency seek expansion -- the meme's eye view. The social network can be constructed to represent archaeological knowledge concerning population size development, the degree of intra- and intergroup exchange or spatial or cultural interaction patterns. Ideas may be long term static or evolving over time, selectively neutral or functionally different, distributed randomly or according to real world examples. 
 
-Population graph generation and idea expansion simulation are computationally expensive, implemented in R and C++ and can be accessed via an R interface. The presentation will elaborate on the concept and show an example application. 
+Population graph generation and idea expansion simulation are implemented in R and C++ and can be accessed with an R interface -- but are computationally expensive. The presentation will elaborate on the concept and show an example application. 
 
 Neiman, F. D. (1995). Stylistic Variation in Evolutionary Perspective: Inferences from Decorative Diversity and Interassemblage Distance in Illinois Woodland Ceramic Assemblages. American Antiquity, 60(1), 7–36. https://doi.org/10.2307/282074
 
